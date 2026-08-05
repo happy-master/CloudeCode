@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  「天命の決断」速習Zoomセミナー LP
+  公開先: https://kaiun119.com/seminar/
+
+  ▼ 公開前に必ず差し替えてください（3箇所以上に出現します）
+     UTAGE_REGISTER_URL
+     → UTAGEイベント作成後に発行される申込URL
+        例) https://utage-system.com/event/XXXXXXXXXXXX/register
+     エディタの一括置換で "UTAGE_REGISTER_URL" を検索して置換してください。
+
+  ※ Zoom参加URLはこのページに記載していません（申込者だけに
+     UTAGEのサンクスメール／リマインドメールで配信されます）
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>「天命の決断」速習Zoomセミナー｜迷いを、決断に。決断を、成果に。</title>
+<meta name="description" content="九星気学の専門家・天道象元による90分の速習Zoomセミナー。判断の軸を取り戻し、迷いを決断へ、決断を成果へ変える。各回定員5名・参加無料。">
+<meta property="og:title" content="「天命の決断」速習Zoomセミナー">
+<meta property="og:description" content="迷いを、決断に。決断を、成果に。九星気学 × 天命プロデュース。各回定員5名・参加無料の90分Zoomセミナー。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kaiun119.com/seminar/">
+<meta property="og:image" content="https://kaiun119.com/seminar/images/tendou-shogen.png">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://kaiun119.com/seminar/">
+<style>
+:root{
+  --gold:#a97c2f;
+  --gold-deep:#8a611f;
+  --gold-light:#c9a45e;
+  --indigo:#2c4361;
+  --indigo-deep:#1c2c42;
+  --ink:#2a2a28;
+  --ink-soft:#4a463c;
+  --wave:#6f95b8;
+  --paper:#fffdf6;
+  --cream:#f3ede0;
+  --accent:#a8322b;
+  --accent-deep:#8a231d;
+  --maxw:880px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP",serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.9;
+  letter-spacing:.04em;
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;}
+
+/* ---------- 共通 ---------- */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+section{padding:76px 0;}
+.sec-head{text-align:center;margin-bottom:44px;}
+.sec-head .en{
+  display:block;font-size:11px;letter-spacing:.42em;color:var(--gold-deep);
+  text-indent:.42em;margin-bottom:14px;
+}
+.sec-head h2{
+  margin:0;font-size:28px;line-height:1.7;letter-spacing:.08em;color:var(--indigo);
+}
+.sec-head h2 em{font-style:normal;color:var(--gold-deep);}
+.rule{
+  display:flex;align-items:center;gap:12px;margin:22px auto 0;max-width:220px;
+}
+.rule::before,.rule::after{
+  content:"";flex:1;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+.rule span{width:6px;height:6px;transform:rotate(45deg);background:var(--gold);}
+
+/* ---------- 青海波 ---------- */
+.seigaiha{
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(circle at 100% 150%,var(--cream) 24%,var(--wave) 25%,var(--wave) 28%,var(--cream) 29%,var(--cream) 36%,var(--wave) 37%,var(--wave) 40%,transparent 40%,transparent),
+    radial-gradient(circle at 0 150%,var(--cream) 24%,var(--wave) 25%,var(--wave) 28%,var(--cream) 29%,var(--cream) 36%,var(--wave) 37%,var(--wave) 40%,transparent 40%,transparent),
+    radial-gradient(circle at 50% 100%,var(--cream) 10%,var(--wave) 11%,var(--wave) 23%,var(--cream) 24%,var(--cream) 30%,var(--wave) 31%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,transparent 64%,transparent),
+    radial-gradient(circle at 100% 50%,var(--wave) 16%,var(--cream) 17%,var(--cream) 23%,var(--wave) 24%,var(--wave) 30%,var(--cream) 31%,var(--cream) 36%,var(--wave) 37%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,var(--cream) 64%,var(--cream) 71%,var(--wave) 72%,var(--wave) 78%,transparent 78%,transparent),
+    radial-gradient(circle at 0 50%,var(--wave) 16%,var(--cream) 17%,var(--cream) 23%,var(--wave) 24%,var(--wave) 30%,var(--cream) 31%,var(--cream) 36%,var(--wave) 37%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,var(--cream) 64%,var(--cream) 71%,var(--wave) 72%,var(--wave) 78%,transparent 78%,transparent);
+  background-size:110px 55px;
+}
+
+/* ---------- ヘッダー ---------- */
+.site-head{
+  background:var(--indigo-deep);color:#f3ece0;
+  padding:12px 0;font-size:12px;letter-spacing:.2em;text-align:center;
+}
+.site-head strong{color:var(--gold-light);font-weight:400;}
+
+/* ---------- ファーストビュー ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:linear-gradient(165deg,#22344c 0%,var(--indigo) 45%,#3a5170 100%);
+  color:#fdfaf2;padding:64px 0 72px;text-align:center;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(201,164,94,.28),transparent 55%),
+    radial-gradient(circle at 12% 90%,rgba(201,164,94,.14),transparent 45%);
+  pointer-events:none;
+}
+.hero .wrap{position:relative;}
+.hero-eyebrow{
+  display:inline-flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:26px;
+}
+.hero-eyebrow span{
+  font-size:11.5px;letter-spacing:.16em;padding:6px 14px;border-radius:999px;
+  border:1px solid rgba(201,164,94,.6);color:#e8d6ac;background:rgba(0,0,0,.16);
+}
+.hero-lead{
+  font-size:15px;letter-spacing:.18em;color:#d9c79c;margin:0 0 18px;
+}
+.hero h1{
+  margin:0 0 8px;font-size:44px;line-height:1.55;letter-spacing:.1em;font-weight:700;
+  text-shadow:0 2px 18px rgba(0,0,0,.3);
+}
+.hero h1 .l2{
+  display:block;
+  background:linear-gradient(180deg,#f0dcae,var(--gold-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero-title{
+  margin:26px 0 0;font-size:20px;letter-spacing:.12em;color:#fdfaf2;line-height:1.8;
+}
+.hero-title small{display:block;font-size:13px;letter-spacing:.24em;color:#c2ae86;margin-top:8px;}
+
+.hero-facts{
+  display:flex;justify-content:center;flex-wrap:wrap;gap:0;
+  margin:34px auto 0;max-width:620px;
+  border:1px solid rgba(201,164,94,.45);border-radius:4px;
+  background:rgba(0,0,0,.18);
+}
+.hero-facts div{
+  flex:1 1 33%;min-width:150px;padding:16px 10px;
+  border-right:1px solid rgba(201,164,94,.25);
+}
+.hero-facts div:last-child{border-right:none;}
+.hero-facts dt{font-size:11px;letter-spacing:.26em;color:#c2ae86;margin-bottom:6px;}
+.hero-facts dd{margin:0;font-size:17px;letter-spacing:.08em;color:#fdfaf2;}
+.hero-facts dd b{font-size:26px;color:var(--gold-light);font-weight:700;}
+
+.limit-note{
+  margin:26px 0 0;font-size:14px;letter-spacing:.08em;color:#f0dcae;
+}
+
+/* ---------- CTA ---------- */
+.cta-block{text-align:center;margin:34px 0 0;}
+.cta-btn{
+  display:inline-block;position:relative;
+  padding:22px 54px;border-radius:6px;text-decoration:none;
+  background:linear-gradient(180deg,var(--accent),var(--accent-deep));
+  color:#fff8ee;font-size:21px;font-weight:700;letter-spacing:.1em;line-height:1.5;
+  box-shadow:0 8px 22px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);
+  border:1px solid rgba(255,255,255,.18);
+  transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;
+}
+.cta-btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 12px 28px rgba(0,0,0,.32);}
+.cta-btn:active{transform:translateY(0);}
+.cta-btn small{display:block;font-size:12.5px;font-weight:400;letter-spacing:.14em;margin-top:7px;opacity:.92;}
+.cta-sub{margin:14px 0 0;font-size:12.5px;letter-spacing:.08em;color:inherit;opacity:.8;}
+.hero .cta-sub{color:#cbbb98;opacity:1;}
+
+/* ---------- 悩みチェック ---------- */
+.worry-card{
+  background:#fff;border:1px solid rgba(169,124,47,.35);border-radius:5px;
+  padding:38px 34px;box-shadow:0 14px 36px rgba(60,50,20,.08);
+}
+.worry-list{list-style:none;margin:0;padding:0;}
+.worry-list li{
+  position:relative;padding:14px 0 14px 44px;font-size:16.5px;line-height:1.85;
+  border-bottom:1px dashed rgba(169,124,47,.3);
+}
+.worry-list li:last-child{border-bottom:none;}
+.worry-list li::before{
+  content:"";position:absolute;left:4px;top:19px;
+  width:19px;height:19px;border:1.5px solid var(--gold);background:#fffdf6;
+}
+.worry-list li::after{
+  content:"✓";position:absolute;left:7px;top:12px;
+  font-size:19px;color:var(--accent);font-weight:700;
+}
+.worry-close{
+  text-align:center;margin:38px 0 0;font-size:19px;line-height:2;color:var(--indigo);font-weight:700;
+}
+.worry-close em{font-style:normal;color:var(--accent);}
+
+/* ---------- 主張 ---------- */
+.thesis{background:var(--indigo-deep);color:#f2ead9;}
+.thesis .sec-head h2{color:#f2ead9;}
+.thesis .sec-head .en{color:var(--gold-light);}
+.thesis-body{font-size:16.5px;line-height:2.2;text-align:center;}
+.thesis-body p{margin:0 0 24px;}
+.thesis-body p:last-child{margin-bottom:0;}
+.thesis-key{
+  display:inline-block;margin-top:8px;padding:20px 32px;
+  border-top:1px solid rgba(201,164,94,.5);border-bottom:1px solid rgba(201,164,94,.5);
+  font-size:22px;line-height:1.9;letter-spacing:.08em;color:var(--gold-light);font-weight:700;
+}
+
+/* ---------- 得られること ---------- */
+.gain-grid{display:grid;gap:22px;}
+@media(min-width:760px){.gain-grid{grid-template-columns:repeat(3,1fr);}}
+.gain{
+  background:#fff;border:1px solid rgba(169,124,47,.3);border-radius:5px;
+  padding:34px 26px;text-align:center;box-shadow:0 10px 26px rgba(60,50,20,.07);
+}
+.gain .num{
+  width:52px;height:52px;margin:0 auto 18px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(180deg,var(--gold-light),var(--gold-deep));
+  color:#fffdf6;font-size:22px;font-weight:700;letter-spacing:0;
+  box-shadow:0 6px 14px rgba(138,97,31,.3);
+}
+.gain h3{margin:0 0 14px;font-size:19px;line-height:1.7;color:var(--indigo);letter-spacing:.06em;}
+.gain p{margin:0;font-size:14.5px;line-height:2;color:var(--ink-soft);text-align:left;}
+
+/* ---------- プログラム ---------- */
+.program{list-style:none;margin:0;padding:0;counter-reset:pg;}
+.program li{
+  position:relative;display:flex;gap:20px;align-items:flex-start;
+  padding:24px 26px;background:#fff;border:1px solid rgba(169,124,47,.28);
+  border-radius:5px;margin-bottom:14px;
+}
+.program li .time{
+  flex:0 0 auto;font-size:12px;letter-spacing:.1em;color:#fffdf6;
+  background:var(--indigo);padding:5px 11px;border-radius:3px;margin-top:4px;
+}
+.program li h3{margin:0 0 6px;font-size:17.5px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
+.program li p{margin:0;font-size:14.5px;line-height:1.95;color:var(--ink-soft);}
+
+/* ---------- 特典 ---------- */
+.bonus{background:linear-gradient(180deg,#fffdf6,#f7f0e2);}
+.bonus-item{
+  display:flex;gap:22px;align-items:flex-start;
+  background:#fff;border:1px solid rgba(169,124,47,.35);border-left:4px solid var(--gold);
+  border-radius:4px;padding:28px 28px;margin-bottom:18px;
+  box-shadow:0 8px 22px rgba(60,50,20,.07);
+}
+.bonus-item .tag{
+  flex:0 0 auto;text-align:center;min-width:64px;
+}
+.bonus-item .tag span{
+  display:block;font-size:10.5px;letter-spacing:.2em;color:var(--gold-deep);
+}
+.bonus-item .tag b{
+  display:block;font-size:34px;line-height:1.1;color:var(--gold-deep);font-weight:700;
+}
+.bonus-item h3{margin:0 0 8px;font-size:19px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
+.bonus-item p{margin:0;font-size:14.5px;line-height:2;color:var(--ink-soft);}
+.bonus-note{
+  margin:26px 0 0;text-align:center;font-size:13.5px;color:var(--ink-soft);line-height:2;
+}
+
+/* ---------- 講師 ---------- */
+.profile{background:var(--paper);}
+.profile-card{
+  background:linear-gradient(170deg,#fffefb,var(--paper));
+  border:1px solid rgba(169,124,47,.5);border-radius:6px;
+  padding:48px 40px 40px;position:relative;overflow:hidden;
+  box-shadow:0 24px 60px rgba(60,50,20,.14);
+}
+.luoshu{
+  position:absolute;right:-40px;top:-40px;width:250px;height:250px;opacity:.05;
+  display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);
+  font-size:58px;font-weight:700;color:var(--indigo);pointer-events:none;
+}
+.luoshu div{display:flex;align-items:center;justify-content:center;border:1px solid var(--indigo);}
+.portrait{
+  width:172px;height:172px;margin:0 auto 22px;border-radius:50%;overflow:hidden;
+  border:3px solid var(--gold);
+  box-shadow:0 0 0 6px #fffefb,0 0 0 7px rgba(169,124,47,.4),0 14px 30px rgba(60,50,20,.25);
+}
+.portrait img{width:100%;height:100%;object-fit:cover;}
+.profile-card .name{
+  text-align:center;font-size:42px;letter-spacing:.18em;margin:0;
+  background:linear-gradient(180deg,var(--gold),var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.profile-card .reading{text-align:center;font-size:13px;letter-spacing:.35em;color:#8a8577;margin:8px 0 20px;}
+.titles{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
+.titles span{
+  font-size:13px;letter-spacing:.08em;padding:7px 16px;border-radius:999px;
+  border:1px solid rgba(44,67,97,.4);color:var(--indigo);background:rgba(44,67,97,.05);
+}
+.profile-catch{
+  text-align:center;font-size:20px;line-height:1.9;color:var(--indigo);
+  letter-spacing:.06em;font-weight:700;margin:0 0 26px;
+}
+.profile-bio{font-size:15px;line-height:2.15;color:var(--ink-soft);margin:0 0 28px;position:relative;}
+.profile-quote{
+  position:relative;text-align:center;padding:26px 20px;
+  border-top:1px solid rgba(169,124,47,.35);border-bottom:1px solid rgba(169,124,47,.35);
+  background:rgba(169,124,47,.05);
+}
+.profile-quote p{margin:0;font-size:16px;line-height:2.2;color:var(--gold-deep);letter-spacing:.05em;}
+.profile-quote .final{
+  display:inline-block;margin-top:10px;font-size:22px;letter-spacing:.1em;
+  color:var(--indigo);font-weight:700;
+}
+
+/* ---------- 日程 ---------- */
+.sched-note{
+  text-align:center;font-size:15px;line-height:2;color:var(--ink-soft);margin:0 0 30px;
+}
+.sched-note b{color:var(--accent);font-size:17px;}
+.sched-table{
+  width:100%;border-collapse:collapse;background:#fff;
+  border:1px solid rgba(169,124,47,.35);font-size:16px;
+}
+.sched-table caption{
+  caption-side:top;text-align:left;font-size:12px;letter-spacing:.2em;
+  color:var(--gold-deep);padding-bottom:10px;
+}
+.sched-table th,.sched-table td{
+  padding:15px 14px;border-bottom:1px solid rgba(169,124,47,.22);text-align:left;
+}
+.sched-table thead th{
+  background:var(--indigo);color:#fdfaf2;font-size:12.5px;letter-spacing:.16em;font-weight:400;
+}
+.sched-table tbody tr:last-child th,.sched-table tbody tr:last-child td{border-bottom:none;}
+.sched-table tbody tr:nth-child(even){background:rgba(169,124,47,.045);}
+.sched-table .no{
+  width:74px;color:var(--gold-deep);font-weight:700;letter-spacing:.05em;white-space:nowrap;
+}
+.sched-table .date{white-space:nowrap;letter-spacing:.05em;}
+.sched-table .time{white-space:nowrap;color:var(--indigo);font-weight:700;letter-spacing:.05em;}
+.sched-table .cap{white-space:nowrap;font-size:13.5px;color:var(--ink-soft);}
+.sched-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+
+/* ---------- 対象 ---------- */
+.target-grid{display:grid;gap:14px;}
+@media(min-width:700px){.target-grid{grid-template-columns:1fr 1fr;}}
+.target-grid li{
+  list-style:none;background:#fff;border:1px solid rgba(169,124,47,.3);
+  border-radius:4px;padding:18px 20px 18px 46px;position:relative;
+  font-size:15.5px;line-height:1.85;
+}
+.target-grid li::before{
+  content:"◆";position:absolute;left:18px;top:17px;color:var(--gold);font-size:14px;
+}
+
+/* ---------- FAQ ---------- */
+.faq details{
+  background:#fff;border:1px solid rgba(169,124,47,.3);border-radius:4px;
+  margin-bottom:12px;overflow:hidden;
+}
+.faq summary{
+  cursor:pointer;list-style:none;padding:20px 52px 20px 54px;position:relative;
+  font-size:16.5px;line-height:1.75;color:var(--indigo);font-weight:700;
+}
+.faq summary::-webkit-details-marker{display:none;}
+.faq summary::before{
+  content:"Q";position:absolute;left:20px;top:19px;
+  color:var(--gold-deep);font-size:17px;font-weight:700;
+}
+.faq summary::after{
+  content:"＋";position:absolute;right:20px;top:19px;color:var(--gold);font-size:17px;
+}
+.faq details[open] summary::after{content:"−";}
+.faq .a{
+  padding:0 24px 22px 54px;font-size:15px;line-height:2.05;color:var(--ink-soft);
+  border-top:1px dashed rgba(169,124,47,.3);margin-top:-1px;padding-top:20px;
+}
+
+/* ---------- 最終CTA ---------- */
+.final{
+  background:linear-gradient(165deg,#22344c,var(--indigo) 55%,#3a5170);
+  color:#fdfaf2;text-align:center;
+}
+.final h2{margin:0 0 20px;font-size:29px;line-height:1.75;letter-spacing:.08em;}
+.final h2 span{
+  background:linear-gradient(180deg,#f0dcae,var(--gold-light));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.final p{font-size:16px;line-height:2.1;margin:0 auto 8px;max-width:620px;color:#e2d8c4;}
+.final .limit-note{color:#f0dcae;}
+
+/* ---------- フッター ---------- */
+.site-foot{
+  background:var(--indigo-deep);color:#a8a08e;text-align:center;
+  padding:38px 22px 96px;font-size:12.5px;letter-spacing:.1em;line-height:2.2;
+}
+.site-foot a{color:#c9bda3;text-decoration:none;border-bottom:1px solid rgba(201,189,163,.4);}
+.site-foot a:hover{color:var(--gold-light);}
+.site-foot .links{margin-bottom:14px;}
+.site-foot .links a{margin:0 10px;}
+
+/* ---------- スマホ固定CTA ---------- */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:rgba(28,44,66,.96);padding:10px 14px;
+  box-shadow:0 -4px 18px rgba(0,0,0,.28);
+  display:none;
+}
+.sticky-cta a{
+  display:block;text-align:center;text-decoration:none;
+  background:linear-gradient(180deg,var(--accent),var(--accent-deep));
+  color:#fff8ee;font-size:17px;font-weight:700;letter-spacing:.08em;
+  padding:15px 10px;border-radius:5px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.2);
+}
+.sticky-cta a small{display:block;font-size:11px;font-weight:400;letter-spacing:.1em;margin-top:3px;opacity:.9;}
+@media(max-width:760px){.sticky-cta{display:block;} .site-foot{padding-bottom:110px;}}
+
+/* ---------- レスポンシブ ---------- */
+@media(max-width:760px){
+  section{padding:56px 0;}
+  .hero{padding:48px 0 56px;}
+  .hero h1{font-size:31px;letter-spacing:.06em;}
+  .hero-title{font-size:17px;}
+  .sec-head h2{font-size:22px;}
+  .worry-card{padding:28px 20px;}
+  .worry-list li{font-size:15.5px;padding-left:38px;}
+  .worry-close{font-size:17px;}
+  .thesis-key{font-size:18px;padding:18px 20px;}
+  .profile-card{padding:36px 22px 30px;}
+  .profile-card .name{font-size:33px;}
+  .profile-catch{font-size:17px;}
+  .portrait{width:136px;height:136px;}
+  .program li{flex-direction:column;gap:10px;padding:20px 18px;}
+  .bonus-item{flex-direction:column;gap:12px;padding:24px 20px;}
+  .bonus-item .tag{display:flex;align-items:baseline;gap:8px;text-align:left;}
+  .cta-btn{width:100%;padding:20px 16px;font-size:18px;}
+  .final h2{font-size:22px;}
+  .hero-facts div{flex:1 1 100%;border-right:none;border-bottom:1px solid rgba(201,164,94,.25);}
+  .hero-facts div:last-child{border-bottom:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  九星気学 × 天命プロデュース ／ <strong>天道象元</strong>
+</header>
+
+<!-- ============ ファーストビュー ============ -->
+<div class="hero">
+  <div class="wrap">
+    <p class="hero-eyebrow">
+      <span>完全オンライン Zoom開催</span>
+      <span>参加無料</span>
+      <span>90分</span>
+    </p>
+
+    <p class="hero-lead">その決断、先送りにしたまま何年が過ぎましたか。</p>
+
+    <h1>
+      迷いを、決断に。<br>
+      <span class="l2">決断を、成果に。</span>
+    </h1>
+
+    <p class="hero-title">
+      「天命の決断」速習Zoomセミナー
+      <small>KYUSEI KIGAKU × TENMEI PRODUCER</small>
+    </p>
+
+    <dl class="hero-facts">
+      <div>
+        <dt>形　式</dt>
+        <dd>Zoomオンライン</dd>
+      </div>
+      <div>
+        <dt>定　員</dt>
+        <dd>各回 <b>5</b> 名</dd>
+      </div>
+      <div>
+        <dt>参加費</dt>
+        <dd>無料</dd>
+      </div>
+    </dl>
+
+    <p class="limit-note">※ 少人数で一人ひとりに向き合うため、各回5名限定です。</p>
+
+    <div class="cta-block">
+      <a class="cta-btn" href="UTAGE_REGISTER_URL?utm_source=lp&amp;utm_medium=hero&amp;utm_campaign=tenmei_kessan">
+        無料で席を確保する
+        <small>ご希望の日程を選んでお申し込みください</small>
+      </a>
+      <p class="cta-sub">お申し込みは1分で完了します</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ 悩み ============ -->
+<section class="seigaiha">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">CHECK</span>
+      <h2>こんな迷いを、<em>抱えていませんか</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="worry-card">
+      <ul class="worry-list">
+        <li>事業の岐路に立っているが、判断の「軸」がない</li>
+        <li>情報は十分に集めた。それでも最後の一歩が踏み出せない</li>
+        <li>決断を先送りにしているうちに、機会を逃してきた</li>
+        <li>「今動くべきか、まだ待つべきか」タイミングが読めない</li>
+        <li>本音で相談できる相手がおらず、いつも独りで抱えている</li>
+        <li>決めたあとも迷いが残り、行動が鈍ってしまう</li>
+      </ul>
+
+      <p class="worry-close">
+        ひとつでも当てはまるなら。<br>
+        足りないのは情報でも、勇気でもありません。<br>
+        <em>「決めるための軸」</em>です。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 主張 ============ -->
+<section class="thesis">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">WHY</span>
+      <h2>なぜ、優秀な人ほど決断できないのか</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="thesis-body">
+      <p>
+        優秀な方ほど、情報を集めます。あらゆる可能性を検討し、リスクを洗い出す。<br>
+        しかし——検討すればするほど、決められなくなる。
+      </p>
+      <p>
+        理由は単純です。判断の基準が「外」にあるから。<br>
+        市場が、他人が、常識が、正解を持っていると考えている限り、<br>
+        情報は増え続け、決断の瞬間は永遠に訪れません。
+      </p>
+      <p>
+        本来、決断の軸は、あなたの内側にあります。<br>
+        生まれ持った性質、巡ってくる時の流れ、進むべき方向。<br>
+        九星気学では、それを<strong style="color:var(--gold-light);font-weight:700;">天命</strong>と呼びます。
+      </p>
+      <p>
+        <span class="thesis-key">
+          人生は、よくなるようにできている。<br>
+          あなたには、ちょうど良いことしか起こらない。
+        </span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 得られること ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">BENEFIT</span>
+      <h2>90分で、<em>持ち帰っていただくもの</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="gain-grid">
+      <div class="gain">
+        <div class="num">壱</div>
+        <h3>決断の「型」</h3>
+        <p>漠然とした迷いを分解し、「本当に決めるべき一点」を特定する手順。何をどの順番で考えれば決まるのか、その道筋を持ち帰っていただきます。</p>
+      </div>
+      <div class="gain">
+        <div class="num">弐</div>
+        <h3>時を読む視点</h3>
+        <p>九星気学に基づく「動くべき時」と「待つべき時」の見極め方。同じ決断でも、時期が違えば結果は変わります。時流の読み方の基本をお伝えします。</p>
+      </div>
+      <div class="gain">
+        <div class="num">参</div>
+        <h3>決断を成果に変える</h3>
+        <p>決めた後に迷いを残さないための考え方と、最初の一歩の置き方。「決めたのに動けない」を断ち切り、決断を実際の成果へ繋げます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ プログラム ============ -->
+<section class="seigaiha">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">PROGRAM</span>
+      <h2>当日のプログラム<em>（90分）</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <ol class="program">
+      <li>
+        <span class="time">15分</span>
+        <div>
+          <h3>なぜ、決断できないのか</h3>
+          <p>迷いが生まれる構造を解き明かします。「情報不足」でも「意志が弱い」わけでもない、本当の理由から。</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">25分</span>
+        <div>
+          <h3>「天命の決断」三つの原則</h3>
+          <p>自分の内側にある軸を取り戻すための原則。九星気学の考え方を、経営・仕事の判断にどう使うのかを具体的にお話しします。</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">25分</span>
+        <div>
+          <h3>時流を読む — 動く時、待つ時</h3>
+          <p>決断の成否を分けるのは「内容」より「時期」です。巡りをどう読み、いつ動くのかの基本をお伝えします。</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">15分</span>
+        <div>
+          <h3>実践ワーク</h3>
+          <p>いま抱えている迷いを、その場で書き出して分解していただきます。明日から使える形に落とし込みます。</p>
+        </div>
+      </li>
+      <li>
+        <span class="time">10分</span>
+        <div>
+          <h3>質疑応答 ／ 特典のご案内</h3>
+          <p>少人数だからこそ、その場でご質問にお答えします。参加特典についてもこちらでご案内します。</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 特典 ============ -->
+<section class="bonus">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">SPECIAL GIFT</span>
+      <h2>ご参加者への<em>三つの特典</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="tag"><span>特典</span><b>壱</b></div>
+      <div>
+        <h3>迷いを天命決断に変える「無料個別相談」（45分）</h3>
+        <p>天道象元が個別に、あなたの状況を伺います。今どこで迷っているのか、何を決めるべきなのかを一緒に整理し、進むべき方向を描きます。オンラインでの実施です。</p>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="tag"><span>特典</span><b>弐</b></div>
+      <div>
+        <h3>あなたの「天命解説書」PDF版</h3>
+        <p>生まれ持った性質と、これから巡ってくる流れをまとめた、あなた専用の一冊。判断に迷ったとき、立ち返る場所としてお使いいただけます。</p>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="tag"><span>特典</span><b>参</b></div>
+      <div>
+        <h3>現状を打開する「決断力診断アプリ」</h3>
+        <p>いまのあなたの決断力がどの状態にあるかを可視化する診断ツール。何がブレーキになっているのかが分かります。</p>
+      </div>
+    </div>
+
+    <p class="bonus-note">
+      ※ 特典はセミナーご参加後、ご登録のメールアドレス宛にご案内します。<br>
+      ※ 個別相談は日程調整のうえ、オンラインで実施いたします。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 講師 ============ -->
+<section class="profile">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">PROFILE</span>
+      <h2>講師のご紹介</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="profile-card">
+      <div class="luoshu">
+        <div>4</div><div>9</div><div>2</div>
+        <div>3</div><div>5</div><div>7</div>
+        <div>8</div><div>1</div><div>6</div>
+      </div>
+
+      <div class="portrait">
+        <img src="images/tendou-shogen.png" alt="天道象元" width="172" height="172">
+      </div>
+
+      <h3 class="name">天道象元</h3>
+      <p class="reading">てんどう・しょうげん</p>
+
+      <div class="titles">
+        <span>九星気学 専門家</span>
+        <span>天命プロデューサー</span>
+      </div>
+
+      <p class="profile-catch">迷いを、決断に。<br>決断を、成果に。</p>
+
+      <p class="profile-bio">
+        九星気学の専門家として、一人ひとりの迷いを決断へと変え、その決断を確かな成果へと繋ぐお手伝いをしています。<br><br>
+        天命プロデューサーとして、あなたにじっくり寄り添い、耳を傾け、心の中にあるものを整理しながら、進むべき道を一緒に描いていきます。
+      </p>
+
+      <div class="profile-quote">
+        <p>人生は、よくなるようにできている。<br>
+        あなたには、ちょうど良いことしか起こらない。</p>
+        <span class="final">だから ―― 「これがよい」</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 日程 ============ -->
+<section class="seigaiha" id="schedule">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">SCHEDULE</span>
+      <h2>開催日程</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <p class="sched-note">
+      ご都合の良い回をお選びください。内容はいずれの回も同じです。<br>
+      <b>各回 定員5名</b>／満席の回は申込ページに表示されません。
+    </p>
+
+    <div class="sched-scroll">
+      <table class="sched-table">
+        <caption>2026年8月 開催｜すべてZoomオンライン・90分</caption>
+        <thead>
+          <tr>
+            <th scope="col">回</th>
+            <th scope="col">開催日</th>
+            <th scope="col">時間</th>
+            <th scope="col">定員</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th class="no" scope="row">第1回</th><td class="date">8月11日(火)</td><td class="time">14:00 – 15:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第2回</th><td class="date">8月11日(火)</td><td class="time">20:00 – 21:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第3回</th><td class="date">8月12日(水)</td><td class="time">14:00 – 15:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第4回</th><td class="date">8月12日(水)</td><td class="time">20:00 – 21:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第5回</th><td class="date">8月13日(木)</td><td class="time">14:00 – 15:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第6回</th><td class="date">8月13日(木)</td><td class="time">20:00 – 21:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第7回</th><td class="date">8月14日(金)</td><td class="time">14:00 – 15:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第8回</th><td class="date">8月14日(金)</td><td class="time">20:00 – 21:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第9回</th><td class="date">8月17日(月)</td><td class="time">14:00 – 15:30</td><td class="cap">5名</td></tr>
+          <tr><th class="no" scope="row">第10回</th><td class="date">8月17日(月)</td><td class="time">20:00 – 21:30</td><td class="cap">5名</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="cta-block">
+      <a class="cta-btn" href="UTAGE_REGISTER_URL?utm_source=lp&amp;utm_medium=schedule&amp;utm_campaign=tenmei_kessan">
+        この日程で申し込む
+        <small>お申し込み後、Zoom参加URLをメールでお送りします</small>
+      </a>
+      <p class="cta-sub">全10回・各回5名限定／合計50名で締め切ります</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 対象 ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">FOR YOU</span>
+      <h2>こんな方に<em>お越しいただきたい</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <ul class="target-grid">
+      <li>事業や進路の大きな岐路に立っている方</li>
+      <li>決断を先送りにしている自覚がある方</li>
+      <li>判断の「自分なりの軸」を持ちたい方</li>
+      <li>動くべきタイミングを見極めたい方</li>
+      <li>孤独に意思決定を続けている経営者・責任者の方</li>
+      <li>九星気学を実務の判断に活かしてみたい方</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="seigaiha faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">Q &amp; A</span>
+      <h2>よくあるご質問</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <details>
+      <summary>本当に無料ですか。あとから費用は発生しますか。</summary>
+      <div class="a">本セミナーの参加費は無料です。セミナー中に費用が発生することはありません。当日は継続してお役に立てるご案内をお伝えする場面がありますが、ご検討はご自由です。</div>
+    </details>
+
+    <details>
+      <summary>九星気学の知識がまったくありませんが大丈夫でしょうか。</summary>
+      <div class="a">まったく問題ありません。専門用語は使わずにお話ししますので、初めての方こそ歓迎いたします。</div>
+    </details>
+
+    <details>
+      <summary>Zoomを使ったことがありません。</summary>
+      <div class="a">お申し込み後にお送りするメールのURLをクリックしていただくだけで参加できます。パソコン・スマートフォン・タブレットのいずれからでもご参加いただけます。</div>
+    </details>
+
+    <details>
+      <summary>顔出しは必要ですか。</summary>
+      <div class="a">カメラ・マイクはオフのままでもご参加いただけます。ご質問はチャットでも承ります。</div>
+    </details>
+
+    <details>
+      <summary>途中から参加、途中退出はできますか。</summary>
+      <div class="a">可能です。ただし内容が連続していますので、できるだけ通しでのご参加をおすすめします。</div>
+    </details>
+
+    <details>
+      <summary>録画のアーカイブ配信はありますか。</summary>
+      <div class="a">少人数での双方向の場としているため、アーカイブ配信は行っておりません。ご都合の合う回をお選びください。</div>
+    </details>
+
+    <details>
+      <summary>申し込んだ後に都合が悪くなった場合は。</summary>
+      <div class="a">お申し込み完了メールに記載のリンクから、キャンセル・日程変更が可能です。定員5名の少人数開催のため、参加が難しくなった際は早めにご連絡いただけると幸いです。</div>
+    </details>
+
+    <details>
+      <summary>特典はいつ受け取れますか。</summary>
+      <div class="a">セミナーご参加後、ご登録のメールアドレス宛にご案内をお送りします。個別相談は日程調整のうえ実施いたします。</div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ 最終CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>
+      いま決めなければ、<br>
+      <span>来年も同じ場所にいます。</span>
+    </h2>
+    <p>
+      決断は、才能ではありません。<br>
+      軸を持てば、誰でも決められるようになります。<br><br>
+      90分だけ、時間をください。<br>
+      あなたの迷いを、決断に変えるところまでご一緒します。
+    </p>
+    <p class="limit-note">※ 各回 定員5名。埋まり次第、その回の受付を終了します。</p>
+
+    <div class="cta-block">
+      <a class="cta-btn" href="UTAGE_REGISTER_URL?utm_source=lp&amp;utm_medium=footer&amp;utm_campaign=tenmei_kessan">
+        無料で席を確保する
+        <small>参加費無料／Zoom／90分</small>
+      </a>
+      <p class="cta-sub">お申し込みは1分で完了します</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="links">
+    <a href="/privacy/">プライバシーポリシー</a>
+    <a href="/tokushoho/">特定商取引法に基づく表記</a>
+    <a href="/contact/">お問い合わせ</a>
+  </div>
+  <div>© 天道象元 ／ KYUSEI KIGAKU × TENMEI PRODUCER</div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="UTAGE_REGISTER_URL?utm_source=lp&amp;utm_medium=sticky&amp;utm_campaign=tenmei_kessan">
+    無料で席を確保する
+    <small>各回 定員5名／Zoom／90分</small>
+  </a>
+</div>
+
+</body>
+</html>
