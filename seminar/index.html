@@ -18,13 +18,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>「天命の決断」速習Zoomセミナー｜迷いを、決断に。決断を、成果に。</title>
-<meta name="description" content="九星気学の専門家・天道象元による90分の速習Zoomセミナー。判断の軸を取り戻し、迷いを決断へ、決断を成果へ変える。各回定員5名・参加無料。">
-<meta property="og:title" content="「天命の決断」速習Zoomセミナー">
-<meta property="og:description" content="迷いを、決断に。決断を、成果に。九星気学 × 天命プロデュース。各回定員5名・参加無料の90分Zoomセミナー。">
+<title>「天命の決断」速習Zoomセミナー｜真の成功は、能力ではなく選択で決まる</title>
+<meta name="description" content="「天命氣学」創始者・天道象元による90分の無料Zoomセミナー＆説明会。あなたの天命軸を明らかにし、進むべき方向性をお伝えします。各回定員5名・参加無料。">
+<meta property="og:title" content="「天命の決断」速習Zoomセミナー ＆ 説明会">
+<meta property="og:description" content="真の成功は、能力ではなく選択で決まる。天命に沿った選択で迷いが消え、本来進むべき道を選べる。各回定員5名・参加無料の90分Zoomセミナー。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kaiun119.com/seminar/">
-<meta property="og:image" content="https://kaiun119.com/seminar/images/tendou-shogen.png">
+<meta property="og:image" content="https://kaiun119.com/seminar/images/hero.jpg">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://kaiun119.com/seminar/">
 <style>
@@ -32,13 +32,14 @@
   --gold:#a97c2f;
   --gold-deep:#8a611f;
   --gold-light:#c9a45e;
-  --indigo:#2c4361;
-  --indigo-deep:#1c2c42;
+  /* 天命氣学ブランド：深緑 × 金 × 生成り */
+  --indigo:#33502f;        /* brand green */
+  --indigo-deep:#1f3520;   /* brand green deep */
   --ink:#2a2a28;
   --ink-soft:#4a463c;
-  --wave:#6f95b8;
+  --wave:#9db894;
   --paper:#fffdf6;
-  --cream:#f3ede0;
+  --cream:#f4f0e3;
   --accent:#a8322b;
   --accent-deep:#8a231d;
   --maxw:880px;
@@ -62,11 +63,11 @@ a{color:inherit;}
 section{padding:76px 0;}
 .sec-head{text-align:center;margin-bottom:44px;}
 .sec-head .en{
-  display:block;font-size:11px;letter-spacing:.42em;color:var(--gold-deep);
+  display:block;font-size:14.9px;letter-spacing:.42em;color:var(--gold-deep);
   text-indent:.42em;margin-bottom:14px;
 }
 .sec-head h2{
-  margin:0;font-size:28px;line-height:1.7;letter-spacing:.08em;color:var(--indigo);
+  margin:0;font-size:37.8px;line-height:1.7;letter-spacing:.08em;color:var(--indigo);
 }
 .sec-head h2 em{font-style:normal;color:var(--gold-deep);}
 .rule{
@@ -89,40 +90,110 @@ section{padding:76px 0;}
     radial-gradient(circle at 0 50%,var(--wave) 16%,var(--cream) 17%,var(--cream) 23%,var(--wave) 24%,var(--wave) 30%,var(--cream) 31%,var(--cream) 36%,var(--wave) 37%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,var(--cream) 64%,var(--cream) 71%,var(--wave) 72%,var(--wave) 78%,transparent 78%,transparent);
   background-size:110px 55px;
 }
+/* 青海波の地に直接載る文字は読みづらいため、白パネルを敷いて可読性を確保する。
+   worry-card / program li / faq details / sched-table は元から白地なのでそのまま。 */
+.seigaiha .sec-head,
+.seigaiha .sched-note,
+.seigaiha .cta-block .cta-sub{
+  background:var(--paper);
+  border:1px solid rgba(169,124,47,.3);
+  border-radius:6px;
+  box-shadow:0 10px 26px rgba(31,53,32,.13);
+}
+.seigaiha .sec-head{padding:32px 24px 28px;}
+.seigaiha .sched-note{padding:22px 24px;margin-bottom:30px;}
+.seigaiha .cta-block .cta-sub{
+  display:table;padding:11px 22px;margin:16px auto 0;opacity:1;
+}
+.seigaiha .sched-table caption{
+  background:var(--paper);
+  border:1px solid rgba(169,124,47,.3);
+  border-bottom:none;
+  border-radius:6px 6px 0 0;
+  padding:12px 16px;
+  margin:0;
+}
+@media(max-width:760px){
+  .seigaiha .sec-head{padding:24px 16px 22px;}
+  .seigaiha .sched-note{padding:18px 16px;}
+  .seigaiha .cta-block .cta-sub{display:block;padding:11px 14px;}
+}
 
 /* ---------- ヘッダー ---------- */
+/* ---------- ブランドヘッダー（天命氣学） ---------- */
 .site-head{
-  background:var(--indigo-deep);color:#f3ece0;
-  padding:12px 0;font-size:12px;letter-spacing:.2em;text-align:center;
+  background:#faf6ec;
+  border-bottom:1px solid rgba(169,124,47,.45);
+  padding:14px 0;
 }
-.site-head strong{color:var(--gold-light);font-weight:400;}
+.site-head .wrap{
+  display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;}
+.brand svg{flex:0 0 auto;display:block;}
+.brand-logo{flex:0 0 auto;display:block;width:60px;height:60px;}
+.brand-name{line-height:1.15;}
+.brand-name b{
+  display:block;font-size:33.8px;letter-spacing:.14em;color:var(--indigo-deep);font-weight:700;
+}
+.brand-name span{
+  display:block;font-size:12.8px;letter-spacing:.34em;color:var(--gold-deep);
+  margin-top:5px;text-indent:.34em;
+}
+.head-badge{
+  flex:0 0 auto;font-size:15.5px;letter-spacing:.14em;color:var(--indigo);
+  border:1px solid rgba(51,80,47,.45);border-radius:3px;padding:6px 13px;
+  background:rgba(51,80,47,.04);white-space:nowrap;
+}
+@media(max-width:520px){
+  .brand-logo{width:42px;height:42px;}
+  .brand{gap:9px;}
+  .brand-name b{font-size:21px;letter-spacing:.08em;white-space:nowrap;}
+  .brand-name span{font-size:9px;letter-spacing:.2em;text-indent:.2em;margin-top:3px;}
+  .head-badge{font-size:10.5px;padding:5px 8px;letter-spacing:.04em;}
+  .site-head .wrap{padding:0 14px;gap:8px;}
+}
 
 /* ---------- ファーストビュー ---------- */
+/* バナー画像が主役なので地色は明るい生成り。文字色も暗色に切り替える。 */
 .hero{
   position:relative;overflow:hidden;
-  background:linear-gradient(165deg,#22344c 0%,var(--indigo) 45%,#3a5170 100%);
-  color:#fdfaf2;padding:64px 0 72px;text-align:center;
+  background:linear-gradient(180deg,#fffdf6 0%,#f7f1e2 55%,#f0e8d4 100%);
+  color:var(--ink);padding:40px 0 56px;text-align:center;
 }
 .hero::before{
   content:"";position:absolute;inset:0;
   background:
-    radial-gradient(circle at 50% 0%,rgba(201,164,94,.28),transparent 55%),
-    radial-gradient(circle at 12% 90%,rgba(201,164,94,.14),transparent 45%);
+    radial-gradient(circle at 50% 0%,rgba(201,164,94,.14),transparent 60%),
+    radial-gradient(circle at 12% 95%,rgba(51,80,47,.07),transparent 50%);
   pointer-events:none;
 }
 .hero .wrap{position:relative;}
+.hero-visual{
+  display:block;
+  width:100%;max-width:620px;height:auto;
+  margin:0 auto;border-radius:6px;
+  box-shadow:0 16px 40px rgba(51,80,47,.22);
+}
+/* 画像が無いときだけ表示されるテキスト版。地が明るいので自前で暗い面を持つ。 */
+.hero-text{
+  display:none;            /* 画像の読み込みに失敗した場合のみ JS で block にする */
+  background:linear-gradient(165deg,#1b2f1c 0%,var(--indigo) 45%,#4a6b45 100%);
+  color:#fdfaf2;border-radius:6px;padding:44px 22px 40px;
+  box-shadow:0 16px 40px rgba(51,80,47,.22);
+}
 .hero-eyebrow{
   display:inline-flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:26px;
 }
 .hero-eyebrow span{
-  font-size:11.5px;letter-spacing:.16em;padding:6px 14px;border-radius:999px;
+  font-size:15.5px;letter-spacing:.16em;padding:6px 14px;border-radius:999px;
   border:1px solid rgba(201,164,94,.6);color:#e8d6ac;background:rgba(0,0,0,.16);
 }
 .hero-lead{
-  font-size:15px;letter-spacing:.18em;color:#d9c79c;margin:0 0 18px;
+  font-size:20.2px;letter-spacing:.18em;color:#d9c79c;margin:0 0 18px;
 }
 .hero h1{
-  margin:0 0 8px;font-size:44px;line-height:1.55;letter-spacing:.1em;font-weight:700;
+  margin:0 0 8px;font-size:59.4px;line-height:1.55;letter-spacing:.1em;font-weight:700;
   text-shadow:0 2px 18px rgba(0,0,0,.3);
 }
 .hero h1 .l2{
@@ -130,28 +201,50 @@ section{padding:76px 0;}
   background:linear-gradient(180deg,#f0dcae,var(--gold-light));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.hero-title{
-  margin:26px 0 0;font-size:20px;letter-spacing:.12em;color:#fdfaf2;line-height:1.8;
+.hero h1 .hl{
+  display:inline-block;font-size:1.24em;
+  background:linear-gradient(180deg,#f5e3b4,var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.hero-title small{display:block;font-size:13px;letter-spacing:.24em;color:#c2ae86;margin-top:8px;}
+.hero-banner{
+  display:table;margin:0 auto 22px;padding:9px 26px;
+  background:rgba(0,0,0,.3);border:1px solid rgba(201,164,94,.55);
+  font-size:18.9px;letter-spacing:.1em;color:#e8d6ac;
+}
+@media(max-width:760px){
+  .hero-banner{font-size:16.9px;padding:8px 16px;letter-spacing:.04em;}
+}
+.hero-mark{
+  margin:30px 0 0;font-size:17.6px;letter-spacing:.24em;color:#c2ae86;
+}
+.hero-mark span{
+  display:inline-block;margin:0 4px;
+}
+.hero-title{
+  margin:26px 0 0;font-size:27px;letter-spacing:.12em;color:#fdfaf2;line-height:1.8;
+}
+.hero-title small{display:block;font-size:17.6px;letter-spacing:.24em;color:#c2ae86;margin-top:8px;}
 
 .hero-facts{
   display:flex;justify-content:center;flex-wrap:wrap;gap:0;
   margin:34px auto 0;max-width:620px;
-  border:1px solid rgba(201,164,94,.45);border-radius:4px;
-  background:rgba(0,0,0,.18);
+  border:1px solid rgba(169,124,47,.42);border-radius:4px;
+  background:var(--paper);
+  box-shadow:0 8px 22px rgba(51,80,47,.12);
 }
 .hero-facts div{
   flex:1 1 33%;min-width:150px;padding:16px 10px;
-  border-right:1px solid rgba(201,164,94,.25);
+  border-right:1px solid rgba(169,124,47,.25);
 }
 .hero-facts div:last-child{border-right:none;}
-.hero-facts dt{font-size:11px;letter-spacing:.26em;color:#c2ae86;margin-bottom:6px;}
-.hero-facts dd{margin:0;font-size:17px;letter-spacing:.08em;color:#fdfaf2;}
-.hero-facts dd b{font-size:26px;color:var(--gold-light);font-weight:700;}
+.hero-facts dt{font-size:14.9px;letter-spacing:.26em;color:var(--gold-deep);margin-bottom:6px;}
+.hero-facts dd{
+  margin:0;font-size:20px;letter-spacing:.04em;color:var(--indigo);white-space:nowrap;
+}
+.hero-facts dd b{font-size:35.1px;color:var(--accent);font-weight:700;}
 
 .limit-note{
-  margin:26px 0 0;font-size:14px;letter-spacing:.08em;color:#f0dcae;
+  margin:26px 0 0;font-size:18.9px;letter-spacing:.08em;color:var(--accent-deep);
 }
 
 /* ---------- CTA ---------- */
@@ -160,16 +253,19 @@ section{padding:76px 0;}
   display:inline-block;position:relative;
   padding:22px 54px;border-radius:6px;text-decoration:none;
   background:linear-gradient(180deg,var(--accent),var(--accent-deep));
-  color:#fff8ee;font-size:21px;font-weight:700;letter-spacing:.1em;line-height:1.5;
+  color:#fff8ee;font-size:28.4px;font-weight:700;letter-spacing:.1em;line-height:1.5;
   box-shadow:0 8px 22px rgba(0,0,0,.28),inset 0 1px 0 rgba(255,255,255,.22);
   border:1px solid rgba(255,255,255,.18);
   transition:transform .15s ease,box-shadow .15s ease,filter .15s ease;
 }
 .cta-btn:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 12px 28px rgba(0,0,0,.32);}
 .cta-btn:active{transform:translateY(0);}
-.cta-btn small{display:block;font-size:12.5px;font-weight:400;letter-spacing:.14em;margin-top:7px;opacity:.92;}
-.cta-sub{margin:14px 0 0;font-size:12.5px;letter-spacing:.08em;color:inherit;opacity:.8;}
-.hero .cta-sub{color:#cbbb98;opacity:1;}
+.cta-btn small{display:block;font-size:16.9px;font-weight:400;letter-spacing:.14em;margin-top:7px;opacity:.92;}
+.cta-sub{margin:14px 0 0;font-size:16.9px;letter-spacing:.08em;color:inherit;opacity:.8;}
+.hero .cta-sub{color:var(--ink-soft);opacity:1;}
+/* フォールバックのテキスト版の中では従来どおり明色を使う */
+.hero-text .limit-note{color:#f0dcae;}
+.hero-text .cta-sub{color:#cbbb98;}
 
 /* ---------- 悩みチェック ---------- */
 .worry-card{
@@ -178,7 +274,7 @@ section{padding:76px 0;}
 }
 .worry-list{list-style:none;margin:0;padding:0;}
 .worry-list li{
-  position:relative;padding:14px 0 14px 44px;font-size:16.5px;line-height:1.85;
+  position:relative;padding:14px 0 14px 44px;font-size:22.3px;line-height:1.85;
   border-bottom:1px dashed rgba(169,124,47,.3);
 }
 .worry-list li:last-child{border-bottom:none;}
@@ -188,10 +284,10 @@ section{padding:76px 0;}
 }
 .worry-list li::after{
   content:"✓";position:absolute;left:7px;top:12px;
-  font-size:19px;color:var(--accent);font-weight:700;
+  font-size:25.7px;color:var(--accent);font-weight:700;
 }
 .worry-close{
-  text-align:center;margin:38px 0 0;font-size:19px;line-height:2;color:var(--indigo);font-weight:700;
+  text-align:center;margin:38px 0 0;font-size:25.7px;line-height:2;color:var(--indigo);font-weight:700;
 }
 .worry-close em{font-style:normal;color:var(--accent);}
 
@@ -199,13 +295,13 @@ section{padding:76px 0;}
 .thesis{background:var(--indigo-deep);color:#f2ead9;}
 .thesis .sec-head h2{color:#f2ead9;}
 .thesis .sec-head .en{color:var(--gold-light);}
-.thesis-body{font-size:16.5px;line-height:2.2;text-align:center;}
+.thesis-body{font-size:22.3px;line-height:2.2;text-align:center;}
 .thesis-body p{margin:0 0 24px;}
 .thesis-body p:last-child{margin-bottom:0;}
 .thesis-key{
   display:inline-block;margin-top:8px;padding:20px 32px;
   border-top:1px solid rgba(201,164,94,.5);border-bottom:1px solid rgba(201,164,94,.5);
-  font-size:22px;line-height:1.9;letter-spacing:.08em;color:var(--gold-light);font-weight:700;
+  font-size:29.7px;line-height:1.9;letter-spacing:.08em;color:var(--gold-light);font-weight:700;
 }
 
 /* ---------- 得られること ---------- */
@@ -219,11 +315,11 @@ section{padding:76px 0;}
   width:52px;height:52px;margin:0 auto 18px;border-radius:50%;
   display:flex;align-items:center;justify-content:center;
   background:linear-gradient(180deg,var(--gold-light),var(--gold-deep));
-  color:#fffdf6;font-size:22px;font-weight:700;letter-spacing:0;
+  color:#fffdf6;font-size:29.7px;font-weight:700;letter-spacing:0;
   box-shadow:0 6px 14px rgba(138,97,31,.3);
 }
-.gain h3{margin:0 0 14px;font-size:19px;line-height:1.7;color:var(--indigo);letter-spacing:.06em;}
-.gain p{margin:0;font-size:14.5px;line-height:2;color:var(--ink-soft);text-align:left;}
+.gain h3{margin:0 0 14px;font-size:25.7px;line-height:1.7;color:var(--indigo);letter-spacing:.06em;}
+.gain p{margin:0;font-size:19.6px;line-height:2;color:var(--ink-soft);text-align:left;}
 
 /* ---------- プログラム ---------- */
 .program{list-style:none;margin:0;padding:0;counter-reset:pg;}
@@ -233,11 +329,11 @@ section{padding:76px 0;}
   border-radius:5px;margin-bottom:14px;
 }
 .program li .time{
-  flex:0 0 auto;font-size:12px;letter-spacing:.1em;color:#fffdf6;
+  flex:0 0 auto;font-size:16.2px;letter-spacing:.1em;color:#fffdf6;
   background:var(--indigo);padding:5px 11px;border-radius:3px;margin-top:4px;
 }
-.program li h3{margin:0 0 6px;font-size:17.5px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
-.program li p{margin:0;font-size:14.5px;line-height:1.95;color:var(--ink-soft);}
+.program li h3{margin:0 0 6px;font-size:23.6px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
+.program li p{margin:0;font-size:19.6px;line-height:1.95;color:var(--ink-soft);}
 
 /* ---------- 特典 ---------- */
 .bonus{background:linear-gradient(180deg,#fffdf6,#f7f0e2);}
@@ -251,15 +347,72 @@ section{padding:76px 0;}
   flex:0 0 auto;text-align:center;min-width:64px;
 }
 .bonus-item .tag span{
-  display:block;font-size:10.5px;letter-spacing:.2em;color:var(--gold-deep);
+  display:block;font-size:14.2px;letter-spacing:.2em;color:var(--gold-deep);
 }
 .bonus-item .tag b{
-  display:block;font-size:34px;line-height:1.1;color:var(--gold-deep);font-weight:700;
+  display:block;font-size:45.9px;line-height:1.1;color:var(--gold-deep);font-weight:700;
 }
-.bonus-item h3{margin:0 0 8px;font-size:19px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
-.bonus-item p{margin:0;font-size:14.5px;line-height:2;color:var(--ink-soft);}
+.bonus-item h3{margin:0 0 8px;font-size:25.7px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
+.bonus-item p{margin:0;font-size:19.6px;line-height:2;color:var(--ink-soft);}
+.bonus-cond{
+  display:inline-block;margin-top:8px;
+  font-size:16.9px;letter-spacing:.06em;color:#fffdf6;font-weight:400;
+  background:#06c755;padding:4px 14px;border-radius:999px;
+}
 .bonus-note{
-  margin:26px 0 0;text-align:center;font-size:13.5px;color:var(--ink-soft);line-height:2;
+  margin:26px 0 0;text-align:center;font-size:18.2px;color:var(--ink-soft);line-height:2;
+}
+
+/* ---------- お客様の声 ---------- */
+.voice{background:var(--indigo-deep);}
+.voice .sec-head h2{color:#f2ead9;}
+.voice .sec-head .en{color:var(--gold-light);}
+.voice-card{
+  background:#fffdf6;border:1px solid rgba(201,164,94,.55);border-radius:5px;
+  padding:28px 30px;margin-bottom:22px;
+  display:flex;gap:26px;align-items:flex-start;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+.voice-who{flex:0 0 auto;width:132px;text-align:center;}
+.voice-who .ph{
+  width:104px;height:104px;margin:0 auto 10px;border-radius:50%;overflow:hidden;
+  border:2px solid var(--gold);background:var(--cream);
+  display:flex;align-items:center;justify-content:center;
+}
+.voice-who .ph img{width:100%;height:100%;object-fit:cover;}
+.voice-who .ph .noimg{font-size:14.9px;line-height:1.6;color:#9a8f74;letter-spacing:.04em;}
+.voice-who .attr{
+  margin:0;font-size:16.2px;line-height:1.6;color:#fffdf6;letter-spacing:0;
+  background:var(--indigo);border-radius:3px;padding:7px 6px;
+}
+.voice-body{flex:1 1 auto;min-width:0;}
+.voice-badge{
+  display:inline-block;font-size:15.5px;letter-spacing:.16em;
+  color:#fffdf6;background:var(--indigo);padding:5px 14px;border-radius:3px;margin-bottom:12px;
+}
+.voice-before{
+  margin:0;font-size:24.3px;line-height:1.7;color:var(--indigo);font-weight:700;letter-spacing:.04em;
+}
+.voice-arrow{text-align:center;color:var(--gold);font-size:20.2px;margin:8px 0;line-height:1;}
+.voice-after{
+  margin:0 0 16px;font-size:19.6px;line-height:1.95;color:var(--ink-soft);
+}
+.voice-note{
+  margin:24px 0 0;text-align:center;
+  font-size:17.6px;line-height:1.9;color:#c7d3c0;letter-spacing:.04em;
+}
+.voice-quote{
+  margin:0;padding:15px 18px;font-size:20.2px;line-height:1.85;
+  color:var(--accent-deep);font-weight:700;letter-spacing:.03em;
+  background:rgba(169,124,47,.09);border-left:3px solid var(--gold);
+}
+@media(max-width:760px){
+  .voice-card{flex-direction:column;gap:16px;padding:22px 18px;}
+  .voice-who{width:100%;display:flex;align-items:center;gap:14px;text-align:left;}
+  .voice-who .ph{margin:0;width:76px;height:76px;flex:0 0 auto;}
+  .voice-who .attr{flex:1 1 auto;padding:8px 10px;}
+  .voice-before{font-size:22.3px;}
+  .voice-arrow{text-align:left;}
 }
 
 /* ---------- 講師 ---------- */
@@ -273,7 +426,7 @@ section{padding:76px 0;}
 .luoshu{
   position:absolute;right:-40px;top:-40px;width:250px;height:250px;opacity:.05;
   display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);
-  font-size:58px;font-weight:700;color:var(--indigo);pointer-events:none;
+  font-size:78.3px;font-weight:700;color:var(--indigo);pointer-events:none;
 }
 .luoshu div{display:flex;align-items:center;justify-content:center;border:1px solid var(--indigo);}
 .portrait{
@@ -283,50 +436,67 @@ section{padding:76px 0;}
 }
 .portrait img{width:100%;height:100%;object-fit:cover;}
 .profile-card .name{
-  text-align:center;font-size:42px;letter-spacing:.18em;margin:0;
+  text-align:center;font-size:56.7px;letter-spacing:.18em;margin:0;
   background:linear-gradient(180deg,var(--gold),var(--gold-deep));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.profile-card .reading{text-align:center;font-size:13px;letter-spacing:.35em;color:#8a8577;margin:8px 0 20px;}
+.profile-card .reading{text-align:center;font-size:17.6px;letter-spacing:.35em;color:#8a8577;margin:8px 0 20px;}
 .titles{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
 .titles span{
-  font-size:13px;letter-spacing:.08em;padding:7px 16px;border-radius:999px;
-  border:1px solid rgba(44,67,97,.4);color:var(--indigo);background:rgba(44,67,97,.05);
+  font-size:17.6px;letter-spacing:.08em;padding:7px 16px;border-radius:999px;
+  border:1px solid rgba(51,80,47,.4);color:var(--indigo);background:rgba(51,80,47,.05);
 }
 .profile-catch{
-  text-align:center;font-size:20px;line-height:1.9;color:var(--indigo);
+  text-align:center;font-size:27px;line-height:1.9;color:var(--indigo);
   letter-spacing:.06em;font-weight:700;margin:0 0 26px;
 }
-.profile-bio{font-size:15px;line-height:2.15;color:var(--ink-soft);margin:0 0 28px;position:relative;}
+.achieve{list-style:none;margin:0 0 28px;padding:0;position:relative;}
+.achieve li{
+  position:relative;padding:14px 0 14px 40px;
+  border-bottom:1px dashed rgba(169,124,47,.35);
+}
+.achieve li:last-child{border-bottom:none;}
+.achieve li::before{
+  content:"";position:absolute;left:8px;top:21px;
+  width:9px;height:9px;transform:rotate(45deg);background:var(--gold);
+}
+.achieve b{
+  display:block;font-size:23px;line-height:1.6;color:var(--indigo);letter-spacing:.04em;
+}
+.achieve b em{font-style:normal;color:var(--accent);font-size:1.22em;}
+.achieve span{
+  display:block;font-size:18.2px;line-height:1.85;color:var(--ink-soft);margin-top:3px;
+}
+.profile-bio{font-size:20.2px;line-height:2.15;color:var(--ink-soft);margin:0 0 28px;position:relative;}
 .profile-quote{
   position:relative;text-align:center;padding:26px 20px;
   border-top:1px solid rgba(169,124,47,.35);border-bottom:1px solid rgba(169,124,47,.35);
   background:rgba(169,124,47,.05);
 }
-.profile-quote p{margin:0;font-size:16px;line-height:2.2;color:var(--gold-deep);letter-spacing:.05em;}
+.profile-quote p{margin:0;font-size:21.6px;line-height:2.2;color:var(--gold-deep);letter-spacing:.05em;}
 .profile-quote .final{
-  display:inline-block;margin-top:10px;font-size:22px;letter-spacing:.1em;
+  display:inline-block;margin-top:10px;font-size:29.7px;letter-spacing:.1em;
   color:var(--indigo);font-weight:700;
 }
 
 /* ---------- 日程 ---------- */
 .sched-note{
-  text-align:center;font-size:15px;line-height:2;color:var(--ink-soft);margin:0 0 30px;
+  text-align:center;font-size:20.2px;line-height:2;color:var(--ink-soft);margin:0 0 30px;
 }
-.sched-note b{color:var(--accent);font-size:17px;}
+.sched-note b{color:var(--accent);font-size:23px;}
 .sched-table{
   width:100%;border-collapse:collapse;background:#fff;
-  border:1px solid rgba(169,124,47,.35);font-size:16px;
+  border:1px solid rgba(169,124,47,.35);font-size:21.6px;
 }
 .sched-table caption{
-  caption-side:top;text-align:left;font-size:12px;letter-spacing:.2em;
+  caption-side:top;text-align:left;font-size:16.2px;letter-spacing:.2em;
   color:var(--gold-deep);padding-bottom:10px;
 }
 .sched-table th,.sched-table td{
   padding:15px 14px;border-bottom:1px solid rgba(169,124,47,.22);text-align:left;
 }
 .sched-table thead th{
-  background:var(--indigo);color:#fdfaf2;font-size:12.5px;letter-spacing:.16em;font-weight:400;
+  background:var(--indigo);color:#fdfaf2;font-size:16.9px;letter-spacing:.16em;font-weight:400;
 }
 .sched-table tbody tr:last-child th,.sched-table tbody tr:last-child td{border-bottom:none;}
 .sched-table tbody tr:nth-child(even){background:rgba(169,124,47,.045);}
@@ -335,7 +505,7 @@ section{padding:76px 0;}
 }
 .sched-table .date{white-space:nowrap;letter-spacing:.05em;}
 .sched-table .time{white-space:nowrap;color:var(--indigo);font-weight:700;letter-spacing:.05em;}
-.sched-table .cap{white-space:nowrap;font-size:13.5px;color:var(--ink-soft);}
+.sched-table .cap{white-space:nowrap;font-size:18.2px;color:var(--ink-soft);}
 .sched-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
 
 /* ---------- 対象 ---------- */
@@ -344,10 +514,10 @@ section{padding:76px 0;}
 .target-grid li{
   list-style:none;background:#fff;border:1px solid rgba(169,124,47,.3);
   border-radius:4px;padding:18px 20px 18px 46px;position:relative;
-  font-size:15.5px;line-height:1.85;
+  font-size:20.9px;line-height:1.85;
 }
 .target-grid li::before{
-  content:"◆";position:absolute;left:18px;top:17px;color:var(--gold);font-size:14px;
+  content:"◆";position:absolute;left:18px;top:17px;color:var(--gold);font-size:18.9px;
 }
 
 /* ---------- FAQ ---------- */
@@ -357,42 +527,48 @@ section{padding:76px 0;}
 }
 .faq summary{
   cursor:pointer;list-style:none;padding:20px 52px 20px 54px;position:relative;
-  font-size:16.5px;line-height:1.75;color:var(--indigo);font-weight:700;
+  font-size:22.3px;line-height:1.75;color:var(--indigo);font-weight:700;
 }
 .faq summary::-webkit-details-marker{display:none;}
 .faq summary::before{
   content:"Q";position:absolute;left:20px;top:19px;
-  color:var(--gold-deep);font-size:17px;font-weight:700;
+  color:var(--gold-deep);font-size:23px;font-weight:700;
 }
 .faq summary::after{
-  content:"＋";position:absolute;right:20px;top:19px;color:var(--gold);font-size:17px;
+  content:"＋";position:absolute;right:20px;top:19px;color:var(--gold);font-size:23px;
 }
 .faq details[open] summary::after{content:"−";}
 .faq .a{
-  padding:0 24px 22px 54px;font-size:15px;line-height:2.05;color:var(--ink-soft);
+  padding:0 24px 22px 54px;font-size:20.2px;line-height:2.05;color:var(--ink-soft);
   border-top:1px dashed rgba(169,124,47,.3);margin-top:-1px;padding-top:20px;
 }
 
 /* ---------- 最終CTA ---------- */
 .final{
-  background:linear-gradient(165deg,#22344c,var(--indigo) 55%,#3a5170);
+  background:linear-gradient(165deg,#1b2f1c,var(--indigo) 55%,#4a6b45);
   color:#fdfaf2;text-align:center;
 }
-.final h2{margin:0 0 20px;font-size:29px;line-height:1.75;letter-spacing:.08em;}
+.final h2{margin:0 0 20px;font-size:39.2px;line-height:1.75;letter-spacing:.08em;}
 .final h2 span{
   background:linear-gradient(180deg,#f0dcae,var(--gold-light));
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.final p{font-size:16px;line-height:2.1;margin:0 auto 8px;max-width:620px;color:#e2d8c4;}
+.final p{font-size:21.6px;line-height:2.1;margin:0 auto 8px;max-width:620px;color:#e2d8c4;}
 .final .limit-note{color:#f0dcae;}
 
 /* ---------- フッター ---------- */
 .site-foot{
   background:var(--indigo-deep);color:#a8a08e;text-align:center;
-  padding:38px 22px 96px;font-size:12.5px;letter-spacing:.1em;line-height:2.2;
+  padding:38px 22px 96px;font-size:16.9px;letter-spacing:.1em;line-height:2.2;
 }
 .site-foot a{color:#c9bda3;text-decoration:none;border-bottom:1px solid rgba(201,189,163,.4);}
 .site-foot a:hover{color:var(--gold-light);}
+.site-foot .foot-brand{
+  margin:0 auto 22px;padding-bottom:20px;max-width:520px;
+  font-size:24.3px;letter-spacing:.2em;color:#e8e2d2;
+  border-bottom:1px solid rgba(201,164,94,.45);
+}
+.site-foot .foot-brand b{color:var(--gold-light);font-weight:700;}
 .site-foot .links{margin-bottom:14px;}
 .site-foot .links a{margin:0 10px;}
 
@@ -406,33 +582,33 @@ section{padding:76px 0;}
 .sticky-cta a{
   display:block;text-align:center;text-decoration:none;
   background:linear-gradient(180deg,var(--accent),var(--accent-deep));
-  color:#fff8ee;font-size:17px;font-weight:700;letter-spacing:.08em;
+  color:#fff8ee;font-size:23px;font-weight:700;letter-spacing:.08em;
   padding:15px 10px;border-radius:5px;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.2);
 }
-.sticky-cta a small{display:block;font-size:11px;font-weight:400;letter-spacing:.1em;margin-top:3px;opacity:.9;}
+.sticky-cta a small{display:block;font-size:14.9px;font-weight:400;letter-spacing:.1em;margin-top:3px;opacity:.9;}
 @media(max-width:760px){.sticky-cta{display:block;} .site-foot{padding-bottom:110px;}}
 
 /* ---------- レスポンシブ ---------- */
 @media(max-width:760px){
   section{padding:56px 0;}
   .hero{padding:48px 0 56px;}
-  .hero h1{font-size:31px;letter-spacing:.06em;}
-  .hero-title{font-size:17px;}
-  .sec-head h2{font-size:22px;}
+  .hero h1{font-size:41.9px;letter-spacing:.06em;}
+  .hero-title{font-size:23px;}
+  .sec-head h2{font-size:29.7px;}
   .worry-card{padding:28px 20px;}
-  .worry-list li{font-size:15.5px;padding-left:38px;}
-  .worry-close{font-size:17px;}
-  .thesis-key{font-size:18px;padding:18px 20px;}
+  .worry-list li{font-size:20.9px;padding-left:38px;}
+  .worry-close{font-size:23px;}
+  .thesis-key{font-size:24.3px;padding:18px 20px;}
   .profile-card{padding:36px 22px 30px;}
-  .profile-card .name{font-size:33px;}
-  .profile-catch{font-size:17px;}
+  .profile-card .name{font-size:44.6px;}
+  .profile-catch{font-size:23px;}
   .portrait{width:136px;height:136px;}
   .program li{flex-direction:column;gap:10px;padding:20px 18px;}
   .bonus-item{flex-direction:column;gap:12px;padding:24px 20px;}
   .bonus-item .tag{display:flex;align-items:baseline;gap:8px;text-align:left;}
-  .cta-btn{width:100%;padding:20px 16px;font-size:18px;}
-  .final h2{font-size:22px;}
+  .cta-btn{width:100%;padding:20px 16px;font-size:24.3px;}
+  .final h2{font-size:29.7px;}
   .hero-facts div{flex:1 1 100%;border-right:none;border-bottom:1px solid rgba(201,164,94,.25);}
   .hero-facts div:last-child{border-bottom:none;}
 }
@@ -441,29 +617,59 @@ section{padding:76px 0;}
 <body>
 
 <header class="site-head">
-  九星気学 × 天命プロデュース ／ <strong>天道象元</strong>
+  <div class="wrap">
+    <!-- 公式ロゴ（ベスト・フューチャー ロゴセット RGB版のシンボルマーク）。
+         配色は原本のまま、加工は切り出しとリサイズのみ。 -->
+    <a class="brand" href="#">
+      <img class="brand-logo" src="images/logo.png" alt="天命氣学" width="240" height="240">
+      <span class="brand-name">
+        <b>天命氣学</b>
+        <span>TENMEI KIGAKU</span>
+      </span>
+    </a>
+    <span class="head-badge">創始者　天道象元</span>
+  </div>
 </header>
 
 <!-- ============ ファーストビュー ============ -->
 <div class="hero">
   <div class="wrap">
+    <!-- メインビジュアル。images/hero.png を置くとこの画像が表示され、
+         下の .hero-text（CSSで組んだテキスト版）は自動的に非表示になる。
+         画像が無い間はテキスト版がそのまま表示されるため崩れない。 -->
+    <img class="hero-visual" src="images/hero.jpg"
+         alt="なぜ人はいつも誤った選択をしてしまうのか。真の成功は能力ではなく選択で決まる。天命に沿った選択で迷いが消え、本来進むべき道を選べる。「天命の決断」無料Zoomセミナー＆説明会">
+
+  <div class="hero-text">
     <p class="hero-eyebrow">
       <span>完全オンライン Zoom開催</span>
       <span>参加無料</span>
       <span>90分</span>
     </p>
 
-    <p class="hero-lead">その決断、先送りにしたまま何年が過ぎましたか。</p>
+    <p class="hero-banner">なぜ人はいつも誤った選択をしてしまうのか</p>
 
     <h1>
-      迷いを、決断に。<br>
-      <span class="l2">決断を、成果に。</span>
+      真の成功は<br>
+      <span class="hl">能力</span>ではなく<br>
+      <span class="hl">選択</span>で決まる
     </h1>
 
-    <p class="hero-title">
-      「天命の決断」速習Zoomセミナー
-      <small>KYUSEI KIGAKU × TENMEI PRODUCER</small>
+    <p class="hero-lead">
+      天命に沿った選択で迷いが消え、<br>
+      本来進むべき道を選べる。
     </p>
+
+    <p class="hero-title">
+      <span class="l2">「天命の決断」</span>
+      速習Zoomセミナー ＆ 説明会
+      <small>あなたの天命軸を明らかにし、進むべき方向性をお伝えします</small>
+    </p>
+
+    <p class="hero-mark">
+      <span>判断軸を整える</span>／<span>迷いを消す</span>／<span>未来を選ぶ</span>
+    </p>
+  </div><!-- /.hero-text -->
 
     <dl class="hero-facts">
       <div>
@@ -542,7 +748,7 @@ section{padding:76px 0;}
       <p>
         本来、決断の軸は、あなたの内側にあります。<br>
         生まれ持った性質、巡ってくる時の流れ、進むべき方向。<br>
-        九星気学では、それを<strong style="color:var(--gold-light);font-weight:700;">天命</strong>と呼びます。
+        天命氣学では、それを<strong style="color:var(--gold-light);font-weight:700;">天命</strong>と呼びます。
       </p>
       <p>
         <span class="thesis-key">
@@ -559,25 +765,25 @@ section{padding:76px 0;}
   <div class="wrap">
     <div class="sec-head">
       <span class="en">BENEFIT</span>
-      <h2>90分で、<em>持ち帰っていただくもの</em></h2>
+      <h2>3つの<em>得られること</em></h2>
       <div class="rule"><span></span></div>
     </div>
 
     <div class="gain-grid">
       <div class="gain">
         <div class="num">壱</div>
-        <h3>決断の「型」</h3>
-        <p>漠然とした迷いを分解し、「本当に決めるべき一点」を特定する手順。何をどの順番で考えれば決まるのか、その道筋を持ち帰っていただきます。</p>
+        <h3>判断軸が整い、迷いが消える</h3>
+        <p>あなたの天命軸が明確になり、どんな場面でも自信を持って選択できるようになります。</p>
       </div>
       <div class="gain">
         <div class="num">弐</div>
-        <h3>時を読む視点</h3>
-        <p>九星気学に基づく「動くべき時」と「待つべき時」の見極め方。同じ決断でも、時期が違えば結果は変わります。時流の読み方の基本をお伝えします。</p>
+        <h3>進むべき道が明確になる</h3>
+        <p>本来進むべき方向性がわかり、最短ルートで目標や理想の未来に近づけます。</p>
       </div>
       <div class="gain">
         <div class="num">参</div>
-        <h3>決断を成果に変える</h3>
-        <p>決めた後に迷いを残さないための考え方と、最初の一歩の置き方。「決めたのに動けない」を断ち切り、決断を実際の成果へ繋げます。</p>
+        <h3>人生もビジネスも自然に好転する</h3>
+        <p>天命に沿った選択で、人間関係・お金・健康などあらゆる面で良い流れが生まれます。</p>
       </div>
     </div>
   </div>
@@ -604,7 +810,7 @@ section{padding:76px 0;}
         <span class="time">25分</span>
         <div>
           <h3>「天命の決断」三つの原則</h3>
-          <p>自分の内側にある軸を取り戻すための原則。九星気学の考え方を、経営・仕事の判断にどう使うのかを具体的にお話しします。</p>
+          <p>自分の内側にある軸を取り戻すための原則。天命氣学の考え方を、経営・仕事の判断にどう使うのかを具体的にお話しします。</p>
         </div>
       </li>
       <li>
@@ -660,14 +866,88 @@ section{padding:76px 0;}
     <div class="bonus-item">
       <div class="tag"><span>特典</span><b>参</b></div>
       <div>
-        <h3>現状を打開する「決断力診断アプリ」</h3>
-        <p>いまのあなたの決断力がどの状態にあるかを可視化する診断ツール。何がブレーキになっているのかが分かります。</p>
+        <h3>現状を打開する「決断力診断アプリ」<br><span class="bonus-cond">＼ LINE登録でご利用いただけます ／</span></h3>
+        <p>いまのあなたの決断力がどの状態にあるかを可視化する診断ツール。何がブレーキになっているのかが分かります。公式LINEにご登録いただくと、そのままお使いいただけます。</p>
       </div>
     </div>
 
     <p class="bonus-note">
       ※ 特典はセミナーご参加後、ご登録のメールアドレス宛にご案内します。<br>
-      ※ 個別相談は日程調整のうえ、オンラインで実施いたします。
+      ※ 個別相談は日程調整のうえ、オンラインで実施いたします。<br>
+      ※ 決断力診断アプリのご利用には、公式LINEへのご登録が必要です。
+    </p>
+  </div>
+</section>
+
+<!-- ============ お客様の声 ============
+     顔写真は seminar/images/ に下記のファイル名で配置してください。
+       voice-01.jpg … 53才 産婦人科院長
+       voice-02.jpg … 75才 税理士法人代表
+       voice-03.jpg … 44才 ペットショップ社長
+     未配置の場合は代替テキストの円が表示され、レイアウトは崩れません。
+============================================ -->
+<section class="voice">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">VOICE</span>
+      <h2>お客様の声</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph">
+          <img src="images/voice-01.jpg" alt="53才 産婦人科院長" width="104" height="104"
+               onerror="this.parentNode.innerHTML='&lt;span class=&quot;noimg&quot;&gt;写真<br>準備中&lt;/span&gt;';">
+        </div>
+        <p class="attr">53才<br>産婦人科院長</p>
+      </div>
+      <div class="voice-body">
+        <span class="voice-badge">受講後の変化</span>
+        <p class="voice-before">本院と分院の経営に<br>危機感と不安があった</p>
+        <p class="voice-arrow">▼</p>
+        <p class="voice-after">天命を基盤に経営基盤を強化し、理念・人・お金の仕組みを構築。</p>
+        <p class="voice-quote">「天命を学ぶ事で、人間関係が改善し患者様に選ばれストレス激減」</p>
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph">
+          <img src="images/voice-02.jpg" alt="75才 税理士法人代表" width="104" height="104"
+               onerror="this.parentNode.innerHTML='&lt;span class=&quot;noimg&quot;&gt;写真<br>準備中&lt;/span&gt;';">
+        </div>
+        <p class="attr">75才<br>税理士法人代表</p>
+      </div>
+      <div class="voice-body">
+        <span class="voice-badge">受講後の変化</span>
+        <p class="voice-before">離職率が上がり<br>経営継続にも不安があった</p>
+        <p class="voice-arrow">▼</p>
+        <p class="voice-after">離職率が35％から5％に下がり、経営が安定し不動産購入。</p>
+        <p class="voice-quote">「天命を読む事で良い人間関係ができ最適な後継者ができた」</p>
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph">
+          <img src="images/voice-03.jpg" alt="44才 ペットショップ社長" width="104" height="104"
+               onerror="this.parentNode.innerHTML='&lt;span class=&quot;noimg&quot;&gt;写真<br>準備中&lt;/span&gt;';">
+        </div>
+        <p class="attr">44才<br>ペットショップ社長</p>
+      </div>
+      <div class="voice-body">
+        <span class="voice-badge">受講後の変化</span>
+        <p class="voice-before">創業130年の歴史が負担で<br>自信喪失していた</p>
+        <p class="voice-arrow">▼</p>
+        <p class="voice-after">方向性・目的・手段が明確になり、売り込まずに売れる仕組みが完成。</p>
+        <p class="voice-quote">「天命を知る事で、お客様に選ばれる仕組みと心豊かな人生を手に入れた」</p>
+      </div>
+    </div>
+
+    <p class="voice-note">
+      ※ 一部、写真はイメージです。<br>
+      ※ 掲載内容は個人の感想であり、成果を保証するものではありません。
     </p>
   </div>
 </section>
@@ -689,21 +969,35 @@ section{padding:76px 0;}
       </div>
 
       <div class="portrait">
-        <img src="images/tendou-shogen.png" alt="天道象元" width="172" height="172">
+        <img src="images/tendou-shogen.jpg" alt="天道象元" width="172" height="172">
       </div>
 
       <h3 class="name">天道象元</h3>
       <p class="reading">てんどう・しょうげん</p>
 
       <div class="titles">
-        <span>九星気学 専門家</span>
+        <span>「天命氣学」創始者</span>
         <span>天命プロデューサー</span>
       </div>
 
       <p class="profile-catch">迷いを、決断に。<br>決断を、成果に。</p>
 
+      <ul class="achieve">
+        <li>
+          <b>40年で <em>4万人</em> 以上を指導</b>
+          <span>経営者を始めとする多くの方を成功に導く</span>
+        </li>
+        <li>
+          <b>メソッド「天命氣学」の創始者</b>
+          <span>氣学を経営・意思決定に応用した独自体系を確立</span>
+        </li>
+        <li>
+          <b>2021年 書籍出版『運を引き寄せる27の習慣』</b>
+          <span>成功者だけがやっている、運を引き寄せる27の習慣</span>
+        </li>
+      </ul>
+
       <p class="profile-bio">
-        九星気学の専門家として、一人ひとりの迷いを決断へと変え、その決断を確かな成果へと繋ぐお手伝いをしています。<br><br>
         天命プロデューサーとして、あなたにじっくり寄り添い、耳を傾け、心の中にあるものを整理しながら、進むべき道を一緒に描いていきます。
       </p>
 
@@ -781,7 +1075,7 @@ section{padding:76px 0;}
       <li>判断の「自分なりの軸」を持ちたい方</li>
       <li>動くべきタイミングを見極めたい方</li>
       <li>孤独に意思決定を続けている経営者・責任者の方</li>
-      <li>九星気学を実務の判断に活かしてみたい方</li>
+      <li>天命氣学を実務の判断に活かしてみたい方</li>
     </ul>
   </div>
 </section>
@@ -801,7 +1095,7 @@ section{padding:76px 0;}
     </details>
 
     <details>
-      <summary>九星気学の知識がまったくありませんが大丈夫でしょうか。</summary>
+      <summary>天命氣学の知識がまったくありませんが大丈夫でしょうか。</summary>
       <div class="a">まったく問題ありません。専門用語は使わずにお話ししますので、初めての方こそ歓迎いたします。</div>
     </details>
 
@@ -832,7 +1126,7 @@ section{padding:76px 0;}
 
     <details>
       <summary>特典はいつ受け取れますか。</summary>
-      <div class="a">セミナーご参加後、ご登録のメールアドレス宛にご案内をお送りします。個別相談は日程調整のうえ実施いたします。</div>
+      <div class="a">セミナーご参加後、ご登録のメールアドレス宛にご案内をお送りします。個別相談は日程調整のうえ実施いたします。なお「決断力診断アプリ」のご利用には、公式LINEへのご登録が必要です。</div>
     </details>
   </div>
 </section>
@@ -863,12 +1157,13 @@ section{padding:76px 0;}
 </section>
 
 <footer class="site-foot">
+  <p class="foot-brand">天命氣学　創始者　<b>天道象元</b></p>
   <div class="links">
     <a href="/privacy/">プライバシーポリシー</a>
     <a href="/tokushoho/">特定商取引法に基づく表記</a>
     <a href="/contact/">お問い合わせ</a>
   </div>
-  <div>© 天道象元 ／ KYUSEI KIGAKU × TENMEI PRODUCER</div>
+  <div>© 天命氣学 ／ TENMEI KIGAKU</div>
 </footer>
 
 <div class="sticky-cta">
@@ -877,6 +1172,20 @@ section{padding:76px 0;}
     <small>各回 定員5名／Zoom／90分</small>
   </a>
 </div>
+
+<script>
+/* ファーストビューのフォールバック判定。
+   img の onload/onerror を インラインで書くと、キャッシュ済み画像では
+   .hero-text の解析前にハンドラが走り空振りするため、DOM解析後にここで判定する。 */
+(function(){
+  var img = document.querySelector('.hero-visual');
+  var txt = document.querySelector('.hero-text');
+  if (!img || !txt) return;
+  function fallback(){ img.remove(); txt.style.display = 'block'; }
+  if (img.complete) { if (!img.naturalWidth) fallback(); }
+  else { img.addEventListener('error', fallback); }
+})();
+</script>
 
 </body>
 </html>

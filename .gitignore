@@ -1,2 +1,5 @@
 .env
 generated/
+
+# 確認用に画像を埋め込んで生成する一時プレビュー（seminar/index.html と内容が重複）
+現在のLP_プレビュー.html
