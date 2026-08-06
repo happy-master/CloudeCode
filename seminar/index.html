@@ -338,11 +338,15 @@ section{padding:76px 0;}
 /* ---------- 特典 ---------- */
 .bonus{background:linear-gradient(180deg,#fffdf6,#f7f0e2);}
 .bonus-item{
-  display:flex;gap:22px;align-items:flex-start;
   background:#fff;border:1px solid rgba(169,124,47,.35);border-left:4px solid var(--gold);
-  border-radius:4px;padding:28px 28px;margin-bottom:18px;
+  border-radius:4px;margin-bottom:22px;overflow:hidden;
   box-shadow:0 8px 22px rgba(60,50,20,.07);
 }
+/* 特典バナー。画像内に見出しとCTAが入っているので主役として最上部に置く */
+.bonus-banner{display:block;width:100%;height:auto;}
+a.bonus-banner-link{display:block;transition:filter .15s ease;}
+a.bonus-banner-link:hover{filter:brightness(1.05);}
+.bonus-body{display:flex;gap:22px;align-items:flex-start;padding:26px 28px 28px;}
 .bonus-item .tag{
   flex:0 0 auto;text-align:center;min-width:64px;
 }
@@ -359,6 +363,15 @@ section{padding:76px 0;}
   font-size:16.9px;letter-spacing:.06em;color:#fffdf6;font-weight:400;
   background:#06c755;padding:4px 14px;border-radius:999px;
 }
+/* LINE以外の補足バッジ（ページ数など）は緑ではなく金で */
+.bonus-cond--page{background:var(--gold-deep);}
+.bonus-line-link{
+  display:inline-block;margin-top:12px;padding:11px 24px;border-radius:999px;
+  background:#06c755;color:#fff;text-decoration:none;
+  font-size:17.6px;font-weight:700;letter-spacing:.06em;
+  box-shadow:0 4px 12px rgba(6,199,85,.32);
+}
+.bonus-line-link:hover{filter:brightness(1.07);}
 .bonus-note{
   margin:26px 0 0;text-align:center;font-size:18.2px;color:var(--ink-soft);line-height:2;
 }
@@ -605,7 +618,7 @@ section{padding:76px 0;}
   .profile-catch{font-size:23px;}
   .portrait{width:136px;height:136px;}
   .program li{flex-direction:column;gap:10px;padding:20px 18px;}
-  .bonus-item{flex-direction:column;gap:12px;padding:24px 20px;}
+  .bonus-body{flex-direction:column;gap:12px;padding:20px 18px 24px;}
   .bonus-item .tag{display:flex;align-items:baseline;gap:8px;text-align:left;}
   .cta-btn{width:100%;padding:20px 16px;font-size:24.3px;}
   .final h2{font-size:29.7px;}
@@ -848,32 +861,42 @@ section{padding:76px 0;}
     </div>
 
     <div class="bonus-item">
+      <img class="bonus-banner" src="https://utagesystem.s3.ap-northeast-1.wasabisys.com/zRDT5xeAoSsc/8DwgpfVraLQu.jpg" alt="迷いを決断に変える！無料Zoom個別相談（45分間）初回限定" width="1672" height="941">
+      <div class="bonus-body">
       <div class="tag"><span>特典</span><b>壱</b></div>
       <div>
         <h3>迷いを天命決断に変える「無料個別相談」（45分）</h3>
         <p>天道象元が個別に、あなたの状況を伺います。今どこで迷っているのか、何を決めるべきなのかを一緒に整理し、進むべき方向を描きます。オンラインでの実施です。</p>
       </div>
-    </div>
-
-    <div class="bonus-item">
-      <div class="tag"><span>特典</span><b>弐</b></div>
-      <div>
-        <h3>あなたの「天命解説書」PDF版</h3>
-        <p>生まれ持った性質と、これから巡ってくる流れをまとめた、あなた専用の一冊。判断に迷ったとき、立ち返る場所としてお使いいただけます。</p>
       </div>
     </div>
 
     <div class="bonus-item">
+      <img class="bonus-banner" src="https://utagesystem.s3.ap-northeast-1.wasabisys.com/zRDT5xeAoSsc/0KUlooEFdgPm.jpg" alt="受講特典 あなたの本質が解るタイプ診断PDF解説書プレゼント" width="1672" height="941">
+      <div class="bonus-body">
+      <div class="tag"><span>特典</span><b>弐</b></div>
+      <div>
+        <h3>あなたの本質がわかる「タイプ診断解説PDF」<br><span class="bonus-cond bonus-cond--page">全32ページ／PDF形式</span></h3>
+        <p>生まれ持った気質と価値観を深く分析し、あなたの強み・傾向・活かし方がひと目でわかる一冊。日常や仕事での具体的な活かし方、他者との違いや関わり方のヒントまで解説しています。判断に迷ったとき、立ち返る場所としてお使いいただけます。</p>
+      </div>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <img class="bonus-banner" src="https://utagesystem.s3.ap-northeast-1.wasabisys.com/zRDT5xeAoSsc/2z5fZttOq74p.jpg" alt="現状を打開するための決断力診断（要LINE登録）" width="1672" height="941">
+      <div class="bonus-body">
       <div class="tag"><span>特典</span><b>参</b></div>
       <div>
         <h3>現状を打開する「決断力診断アプリ」<br><span class="bonus-cond">＼ LINE登録でご利用いただけます ／</span></h3>
-        <p>いまのあなたの決断力がどの状態にあるかを可視化する診断ツール。何がブレーキになっているのかが分かります。公式LINEにご登録いただくと、そのままお使いいただけます。</p>
+        <p>いまのあなたの決断力がどの状態にあるかを可視化する診断ツール。何がブレーキになっているのかが分かります。下のボタンから公式LINEにご登録いただくと、そのままお使いいただけます。</p>
+        <a class="bonus-line-link" href="https://liff-gateway.lineml.jp/landing?follow=%40soy9097d&amp;lp=enyWrO&amp;liff_id=2007535760-OpwMJdw1" target="_blank" rel="noopener">公式LINEに登録して診断アプリを使う</a>
+      </div>
       </div>
     </div>
 
     <p class="bonus-note">
       ※ 特典はセミナーご参加後、ご登録のメールアドレス宛にご案内します。<br>
-      ※ 個別相談は日程調整のうえ、オンラインで実施いたします。<br>
+      ※ 個別相談はオンライン（Zoom）で45分。ご都合の良い日時をカレンダーからお選びいただけます。<br>
       ※ 決断力診断アプリのご利用には、公式LINEへのご登録が必要です。
     </p>
   </div>
