@@ -1,5 +1,17 @@
+# 認証情報（.env.example だけは雛形として追跡する）
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+
 generated/
+node_modules/
+.DS_Store
+
+# Claude Code の作業用ワークツリー
+.claude/worktrees/
 
 # 確認用に画像を埋め込んで生成する一時プレビュー（seminar/index.html と内容が重複）
 現在のLP_プレビュー.html
