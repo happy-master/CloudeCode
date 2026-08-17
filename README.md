@@ -22,7 +22,9 @@ LP の実際の公開先は **UTAGE** です。
 
 LP 内の CTA は hero / schedule / footer / sticky の4箇所にあり、それぞれ `utm_medium` を付けて申込フォームへリンクしています。
 
-> **注意:** `seminar/index.html` の冒頭コメントと `og:url` / `canonical` は公開先を `https://kaiun119.com/seminar/` と記載していますが、これは誤りです。`kaiun119.com/seminar/` は WordPress の別ページ（商品・講座一覧）で、`/seminar/images/` は 404 を返します。URL を扱う際は UTAGE 側を正としてください。
+OGP と `canonical` は UTAGE の実ページと同じ値を指しています。`og:image` は UTAGE が配信しているストレージ上の画像です。
+
+> **注意:** `kaiun119.com/seminar/` は公開先ではありません。そちらは WordPress の別ページ（商品・講座一覧）で、`/seminar/images/` は 404 を返します。以前は冒頭コメントと OGP がこの URL を指していましたが修正済みです。URL を扱う際は UTAGE 側を正としてください。
 
 Zoom の参加 URL は LP には記載していません。申込者に UTAGE のサンクスメール／リマインドメールで配信されます。
 
