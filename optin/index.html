@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  天道象元 公式 無料プレゼント オプトインLP
+  （名前・メールアドレス登録 ＋ 公式LINE登録を入口とする、
+    天道象元のビジネスへの導線ページ）
+
+  公開先（UTAGE）: 詳細は UTAGE_SETUP.md を参照してください。
+    ファネル: IyYKAOwMMDPC「天道象元 無料プレゼント オプトインLP（3大特典）」
+    - LPページ     : https://utage-system.com/p/1MJJCOhH8R7u（本ファイルを raw_html インポート済み）
+    - 登録フォーム  : https://utage-system.com/p/2P8EUynCjJkQ（UTAGEネイティブの「フォーム」要素。お名前・メールアドレスを収集）
+    - サンキュー/LINE: https://utage-system.com/p/1oPYvFaF9gna（line-button / line-qr で公式LINE登録を案内）
+    - 特典3は公式LINE登録者限定でお渡しします。
+
+  本ファイル内のCTAリンク（.js-form-link）の href は、末尾のJavaScriptで
+  登録フォームURLに書き換えています（UTAGEに再インポートする際もこのまま利用可）。
+
+  画像について:
+    - images/book-27.jpg      … 書籍『運を引き寄せる27の習慣』表紙（提供いただいた画像）
+    - images/tendou-shogen.jpg… 天道象元 プロフィール写真（提供いただいた画像）
+    - images/logo.png         … ベスト・フューチャー ロゴ（提供いただいた画像）
+    - images/voice-0X.jpg     … お客様の声（seminar/images/ と共通の素材）
+    - 特典2の画像は生成AI（Gamma）で作成し、外部CDN URLを直接参照しています
+      （bonus2-video-url を参照。ローカル保存は環境の制約により未対応）
+    - 特典3はテキスト情報のみのため、画像の代わりにアイコンで表現しています
+  ============================================================================
+-->
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>天道象元 公式 無料プレゼント｜迷いを、決断に。決断を、成果に。</title>
+<meta name="description" content="「天命氣学」創始者・天道象元より、無料の3大プレゼント。電子書籍『運を引き寄せる27の習慣』全文PDF、特別解説動画、自己診断シートを、お名前・メールアドレス登録と公式LINE登録でお届けします。">
+<meta property="og:title" content="天道象元 公式 無料プレゼント｜迷いを、決断に。決断を、成果に。">
+<meta property="og:description" content="「天命氣学」創始者・天道象元より、無料の3大プレゼント。電子書籍PDF・特別解説動画・自己診断シートをお届けします。">
+<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
+<style>
+:root{
+  --gold:#a97c2f;
+  --gold-deep:#8a611f;
+  --gold-light:#c9a45e;
+  --indigo:#33502f;
+  --indigo-deep:#1f3520;
+  --ink:#2a2a28;
+  --ink-soft:#4a463c;
+  --wave:#9db894;
+  --paper:#fffdf6;
+  --cream:#f4f0e3;
+  --accent:#a8322b;
+  --accent-deep:#8a231d;
+  --maxw:880px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"Yu Mincho","YuMincho","Hiragino Mincho ProN","Noto Serif JP",serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.9;
+  letter-spacing:.04em;
+  -webkit-text-size-adjust:100%;
+  padding-bottom:64px; /* sticky CTAの高さ分 */
+}
+img{max-width:100%;height:auto;display:block;}
+a{color:inherit;text-decoration:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+section{padding:64px 0;}
+.sec-head{text-align:center;margin-bottom:38px;}
+.sec-head .en{
+  display:block;font-size:13px;letter-spacing:.4em;color:var(--gold-deep);
+  text-indent:.4em;margin-bottom:12px;
+}
+.sec-head h2{margin:0;font-size:29px;line-height:1.7;letter-spacing:.06em;color:var(--indigo);}
+.sec-head h2 em{font-style:normal;color:var(--gold-deep);}
+.rule{display:flex;align-items:center;gap:12px;margin:20px auto 0;max-width:200px;}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.rule span{width:6px;height:6px;transform:rotate(45deg);background:var(--gold);}
+
+/* ---------- 青海波 ---------- */
+.seigaiha{
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(circle at 100% 150%,var(--cream) 24%,var(--wave) 25%,var(--wave) 28%,var(--cream) 29%,var(--cream) 36%,var(--wave) 37%,var(--wave) 40%,transparent 40%,transparent),
+    radial-gradient(circle at 0 150%,var(--cream) 24%,var(--wave) 25%,var(--wave) 28%,var(--cream) 29%,var(--cream) 36%,var(--wave) 37%,var(--wave) 40%,transparent 40%,transparent),
+    radial-gradient(circle at 50% 100%,var(--cream) 10%,var(--wave) 11%,var(--wave) 23%,var(--cream) 24%,var(--cream) 30%,var(--wave) 31%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,transparent 64%,transparent),
+    radial-gradient(circle at 100% 50%,var(--wave) 16%,var(--cream) 17%,var(--cream) 23%,var(--wave) 24%,var(--wave) 30%,var(--cream) 31%,var(--cream) 36%,var(--wave) 37%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,var(--cream) 64%,var(--cream) 71%,var(--wave) 72%,var(--wave) 78%,transparent 78%,transparent),
+    radial-gradient(circle at 0 50%,var(--wave) 16%,var(--cream) 17%,var(--cream) 23%,var(--wave) 24%,var(--wave) 30%,var(--cream) 31%,var(--cream) 36%,var(--wave) 37%,var(--wave) 43%,var(--cream) 44%,var(--cream) 50%,var(--wave) 51%,var(--wave) 63%,var(--cream) 64%,var(--cream) 71%,var(--wave) 72%,var(--wave) 78%,transparent 78%,transparent);
+  background-size:110px 55px;
+}
+.seigaiha .sec-head{
+  background:var(--paper);border:1px solid rgba(169,124,47,.3);border-radius:6px;
+  box-shadow:0 10px 26px rgba(31,53,32,.13);padding:28px 20px 24px;
+}
+
+/* ---------- ヘッダー ---------- */
+.gnav{padding:16px 0;background:var(--paper);border-bottom:1px solid rgba(169,124,47,.2);}
+.gnav .wrap{display:flex;align-items:center;gap:12px;}
+.gnav img{height:36px;width:auto;}
+.gnav .brand{font-size:14px;letter-spacing:.06em;color:var(--indigo);}
+
+/* ---------- ヒーロー ---------- */
+.hero{
+  background:linear-gradient(180deg,#fffefb 0%,var(--cream) 100%);
+  padding:52px 0 44px;
+  border-bottom:1px solid rgba(169,124,47,.25);
+}
+.hero .eyebrow{
+  display:inline-block;font-size:13px;letter-spacing:.14em;color:#fff;background:var(--gold-deep);
+  padding:6px 16px;border-radius:100px;margin-bottom:18px;
+}
+.hero h1{
+  font-size:36px;line-height:1.55;color:var(--indigo);margin:0 0 18px;letter-spacing:.04em;
+}
+.hero h1 em{font-style:normal;color:var(--gold-deep);}
+.hero .lead{font-size:17px;color:var(--ink-soft);margin:0 0 28px;max-width:560px;}
+.hero .stage{display:flex;gap:28px;align-items:flex-end;flex-wrap:wrap-reverse;}
+.hero .stage-text{flex:1 1 320px;min-width:280px;}
+.hero .stage-photo{flex:0 0 240px;max-width:240px;margin:0 auto;}
+.hero .stage-photo img{border-radius:8px;box-shadow:0 18px 40px rgba(31,53,32,.22);}
+.hero-name{text-align:center;margin-top:10px;font-size:14px;color:var(--indigo);}
+.hero-name b{display:block;font-size:17px;letter-spacing:.1em;}
+
+.icon-row{display:flex;gap:18px;margin:26px 0 30px;flex-wrap:wrap;}
+.icon-row li{
+  list-style:none;flex:1 1 150px;text-align:center;font-size:13.5px;color:var(--indigo);
+  background:var(--paper);border:1px solid rgba(169,124,47,.35);border-radius:8px;padding:16px 10px 14px;
+}
+.icon-row .ico{font-size:26px;display:block;margin-bottom:8px;}
+
+.cta-btn{
+  display:block;text-align:center;background:linear-gradient(180deg,#c9a45e,var(--gold-deep));
+  color:#fff !important;font-size:19px;font-weight:bold;letter-spacing:.08em;
+  padding:19px 20px;border-radius:100px;box-shadow:0 14px 28px rgba(138,97,31,.35);
+  border:1px solid rgba(255,255,255,.4);
+}
+.cta-btn:hover{filter:brightness(1.06);}
+.cta-btn .sub{display:block;font-size:12.5px;font-weight:normal;letter-spacing:.05em;margin-top:4px;opacity:.9;}
+.cta-note{text-align:center;font-size:12.5px;color:var(--ink-soft);margin-top:10px;}
+
+/* ---------- プロフィール ---------- */
+.profile-card{
+  background:var(--paper);border:1px solid rgba(169,124,47,.35);border-radius:10px;
+  padding:34px 26px;display:flex;gap:26px;flex-wrap:wrap;align-items:center;
+  box-shadow:0 12px 30px rgba(31,53,32,.1);
+}
+.profile-card .ph{flex:0 0 150px;}
+.profile-card .ph img{border-radius:8px;}
+.profile-card .body{flex:1 1 320px;min-width:260px;}
+.profile-card .name{margin:0 0 4px;font-size:22px;color:var(--indigo);letter-spacing:.08em;}
+.profile-card .reading{margin:0 0 10px;font-size:12.5px;color:var(--ink-soft);}
+.profile-card .titles span{
+  display:inline-block;font-size:12.5px;color:var(--gold-deep);border:1px solid var(--gold);
+  border-radius:100px;padding:3px 12px;margin:0 6px 8px 0;
+}
+.profile-card p{margin:10px 0 0;font-size:15.5px;}
+.profile-card .achieve{margin:14px 0 0;padding-left:0;list-style:none;}
+.profile-card .achieve li{
+  display:flex;gap:10px;align-items:flex-start;padding:10px 0;border-top:1px dashed rgba(169,124,47,.35);
+  font-size:14.5px;
+}
+.profile-card .achieve li::before{content:"◆";color:var(--gold-deep);flex:0 0 auto;}
+.book-quote{
+  margin-top:22px;background:var(--cream);border-left:4px solid var(--gold-deep);border-radius:0 8px 8px 0;
+  padding:16px 18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;
+}
+.book-quote img{width:70px;flex:0 0 70px;box-shadow:0 8px 18px rgba(0,0,0,.18);}
+.book-quote p{margin:0;font-size:13.8px;color:var(--ink-soft);}
+
+/* ---------- 特典 ---------- */
+.bonus{background:linear-gradient(180deg,#fffdf6,#f4efe0);}
+.bonus-item{
+  background:var(--paper);border-radius:12px;overflow:hidden;margin-bottom:26px;
+  box-shadow:0 14px 32px rgba(31,53,32,.14);border:1px solid rgba(169,124,47,.3);
+}
+.bonus-banner-wrap{position:relative;aspect-ratio:16/9;overflow:hidden;background:linear-gradient(135deg,var(--indigo-deep),var(--indigo));}
+.bonus-banner-wrap img.bg{width:100%;height:100%;object-fit:cover;display:block;}
+.bonus-banner-wrap.contain{display:flex;align-items:center;justify-content:center;padding:22px 0 46px;}
+.bonus-banner-wrap.contain img.bg{
+  width:auto;height:100%;max-width:60%;object-fit:contain;
+  box-shadow:0 16px 34px rgba(0,0,0,.45);border-radius:3px;
+}
+.bonus-tagchip{
+  position:absolute;top:16px;left:16px;background:rgba(20,20,18,.55);color:#f4d99a;
+  border:1px solid var(--gold-light);border-radius:100px;padding:5px 16px;font-size:12.5px;letter-spacing:.12em;
+  backdrop-filter:blur(2px);
+}
+.bonus-banner-caption{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 18px 14px;
+  background:linear-gradient(180deg,rgba(20,20,18,0) 0%,rgba(15,15,14,.82) 60%,rgba(10,10,10,.92) 100%);
+  color:#fff;
+}
+.bonus-banner-caption .book{font-size:15px;letter-spacing:.06em;}
+.bonus-banner-caption .book em{color:#f4d99a;font-style:normal;}
+.bonus-icon-banner{
+  position:relative;height:100%;display:flex;align-items:center;justify-content:center;
+  background:
+    radial-gradient(circle at 30% 20%,rgba(244,217,154,.18),transparent 55%),
+    linear-gradient(135deg,var(--indigo-deep),var(--indigo));
+}
+.bonus-icon-banner svg{width:104px;height:104px;}
+.bonus-body{padding:22px 22px 26px;}
+.bonus-body h3{margin:0 0 10px;font-size:19.5px;line-height:1.7;color:var(--indigo);letter-spacing:.03em;}
+.bonus-body p{margin:0;font-size:15.3px;line-height:1.85;color:var(--ink-soft);}
+.bonus-cond{
+  display:inline-block;margin-top:14px;font-size:12.5px;padding:5px 14px;border-radius:100px;
+  background:#e7f0e5;color:var(--indigo-deep);border:1px solid var(--wave);
+}
+.bonus-cond--line{background:#e6f6ea;color:#1c7a37;border-color:#8fd6a3;}
+
+/* ---------- 声 ---------- */
+.voice-card{
+  display:flex;gap:18px;align-items:flex-start;background:var(--paper);
+  border:1px solid rgba(169,124,47,.3);border-radius:10px;padding:20px;margin-bottom:16px;
+  box-shadow:0 10px 22px rgba(31,53,32,.08);
+}
+.voice-who{flex:0 0 88px;text-align:center;}
+.voice-who .ph img{width:72px;height:72px;border-radius:50%;object-fit:cover;margin:0 auto;}
+.voice-who .attr{font-size:12px;color:var(--ink-soft);margin:8px 0 0;}
+.voice-body{flex:1;}
+.voice-quote{margin:0;font-size:15px;color:var(--indigo);line-height:1.8;}
+.voice-note{font-size:12px;color:var(--ink-soft);margin-top:6px;text-align:center;}
+
+/* ---------- 登録ステップ ---------- */
+.steps{display:flex;gap:16px;flex-wrap:wrap;margin:30px 0 34px;}
+.steps li{
+  list-style:none;flex:1 1 220px;background:var(--paper);border:1px solid rgba(169,124,47,.3);
+  border-radius:10px;padding:20px 18px;text-align:center;box-shadow:0 8px 18px rgba(31,53,32,.08);
+}
+.steps .num{
+  display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;
+  background:var(--gold-deep);color:#fff;font-size:14px;margin-bottom:10px;
+}
+.steps p{margin:0;font-size:14px;color:var(--ink-soft);}
+.steps b{display:block;font-size:15px;color:var(--indigo);margin-bottom:4px;}
+
+.privacy-note{
+  font-size:12.5px;color:var(--ink-soft);background:var(--cream);border-radius:8px;
+  padding:16px 18px;margin-top:26px;line-height:1.9;
+}
+
+/* ---------- フッター ---------- */
+footer{background:var(--indigo-deep);color:#eee7d6;padding:40px 0 30px;font-size:12.8px;}
+footer .wrap{text-align:center;}
+footer img{height:34px;margin:0 auto 14px;filter:brightness(0) invert(1);opacity:.9;}
+footer a{text-decoration:underline;}
+footer .links{margin:14px 0;}
+footer .links a{margin:0 10px;}
+footer .copy{opacity:.65;margin-top:14px;}
+
+/* ---------- スティッキーCTA ---------- */
+.sticky-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:40;background:rgba(255,253,246,.96);
+  border-top:1px solid rgba(169,124,47,.4);padding:10px 14px;
+  box-shadow:0 -8px 22px rgba(31,53,32,.14);
+}
+.sticky-cta a{
+  display:block;text-align:center;background:linear-gradient(180deg,#c9a45e,var(--gold-deep));
+  color:#fff;font-size:15.5px;font-weight:bold;padding:12px 10px;border-radius:100px;
+}
+
+@media(max-width:640px){
+  .hero h1{font-size:27px;}
+  .sec-head h2{font-size:22px;}
+  .profile-card{padding:24px 18px;}
+  section{padding:48px 0;}
+}
+</style>
+</head>
+<body>
+
+<header class="gnav">
+  <div class="wrap">
+    <img src="images/logo.png" alt="ベスト・フューチャー">
+    <span class="brand">迷いを決断に変え、最高の未来を創造する</span>
+  </div>
+</header>
+
+<!-- ============ ヒーロー ============ -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">天道象元 公式　無料プレゼント</span>
+    <h1>迷いを、<em>決断</em>に。<br>決断を、成果に。</h1>
+    <p class="lead">
+      40年で4万人以上を指導してきた「天命氣学」創始者・天道象元。
+      その智慧に無料で触れられる<strong>3つのプレゼント</strong>をご用意しました。
+      お名前・メールアドレスのご登録と公式LINEのご登録で、今すぐお受け取りいただけます。
+    </p>
+
+    <div class="stage">
+      <div class="stage-text">
+        <ul class="icon-row">
+          <li><span class="ico">📖</span>電子書籍(PDF)<br>全文プレゼント</li>
+          <li><span class="ico">🎥</span>特別解説動画</li>
+          <li><span class="ico">📝</span>自己診断シート<br>（要LINE登録）</li>
+        </ul>
+        <a class="cta-btn js-form-link" href="#regi">
+          今すぐ無料で3大特典を受け取る
+          <span class="sub">登録は30秒で完了します</span>
+        </a>
+        <p class="cta-note">※ 特典のお届けにメールアドレスが必要です。ドメイン受信設定をご確認ください。</p>
+      </div>
+      <div class="stage-photo">
+        <img src="images/tendou-shogen.jpg" alt="天道象元" width="480" height="480">
+        <p class="hero-name"><b>天道象元</b>てんどう・しょうげん<br>「天命氣学」創始者・天命プロデューサー</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ プロフィール ============ -->
+<section class="seigaiha">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">PROFILE</span>
+      <h2>天道象元とは</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="profile-card">
+      <div class="ph">
+        <img src="images/tendou-shogen.jpg" alt="天道象元" width="300" height="300">
+      </div>
+      <div class="body">
+        <h3 class="name">天道象元</h3>
+        <p class="reading">てんどう・しょうげん</p>
+        <div class="titles">
+          <span>「天命氣学」創始者</span>
+          <span>天命プロデューサー</span>
+        </div>
+        <ul class="achieve">
+          <li>40年で<strong>4万人以上</strong>を指導。経営者をはじめ、多くのリーダーの意思決定を支えてきました。</li>
+          <li>氣学を経営・意思決定に応用した独自メソッド「天命氣学」の創始者。</li>
+        </ul>
+        <div class="book-quote">
+          <img src="images/book-27.jpg" alt="書籍『成功者だけがやっている 運を引き寄せる27の習慣』天道象元 著">
+          <p>
+            2021年、書籍『成功者だけがやっている 運を引き寄せる27の習慣』を出版。<br>
+            「習慣を変えれば、運気が上がる」——夢を叶える「宝地図」提唱者・望月俊孝氏も推薦する一冊です。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 特典 ============ -->
+<section class="bonus" id="bonus">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">PRESENT</span>
+      <h2>ご登録者への<em>3大特典</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <!-- 特典1: 書籍PDF -->
+    <div class="bonus-item">
+      <div class="bonus-banner-wrap contain">
+        <img class="bg" src="images/book-27.jpg" alt="書籍『成功者だけがやっている 運を引き寄せる27の習慣』表紙">
+        <span class="bonus-tagchip">特典 1</span>
+        <div class="bonus-banner-caption">
+          <p class="book">電子書籍(PDF)全文プレゼント<br><em>『成功者だけがやっている 運を引き寄せる27の習慣』</em></p>
+        </div>
+      </div>
+      <div class="bonus-body">
+        <h3>天道象元の代表作を、まるごと無料でプレゼント</h3>
+        <p>
+          「運を味方につけるには、才能や環境ではなく“習慣”を変えること」。
+          天道象元の代表作『成功者だけがやっている 運を引き寄せる27の習慣』（2021年出版）を、
+          電子書籍(PDF)としてまずは無料でお読みいただけます。
+        </p>
+        <span class="bonus-cond">ご登録のメールアドレスへPDFをお届けします</span>
+      </div>
+    </div>
+
+    <!-- 特典2: 解説動画 -->
+    <div class="bonus-item">
+      <div class="bonus-banner-wrap">
+        <img class="bg" id="bonus2-image" src="" alt="特別解説動画イメージ" style="display:none;">
+        <div class="bonus-icon-banner" id="bonus2-fallback">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="52" stroke="#c9a45e" stroke-width="2.5"/>
+            <circle cx="60" cy="60" r="40" fill="rgba(201,164,94,.12)"/>
+            <path d="M50 42L82 60L50 78V42Z" fill="#f4d99a"/>
+          </svg>
+        </div>
+        <span class="bonus-tagchip">特典 2</span>
+        <div class="bonus-banner-caption">
+          <p class="book">天道象元 特別解説動画<br><em>「決断力を高める 天命氣学ダイジェスト」</em></p>
+        </div>
+      </div>
+      <div class="bonus-body">
+        <h3>書籍だけでは伝えきれない、実践のコツを動画で</h3>
+        <p>
+          40年間の指導経験から生まれた「決断の型」を、天道象元自身が動画でわかりやすく解説。
+          読むだけでなく、実際の考え方の使い方まで踏み込んでお伝えします。
+        </p>
+        <span class="bonus-cond">ご登録のメールアドレスへ視聴URLをお届けします</span>
+      </div>
+    </div>
+
+    <!-- 特典3: 自己診断シート（要LINE登録） -->
+    <div class="bonus-item">
+      <div class="bonus-banner-wrap">
+        <div class="bonus-icon-banner">
+          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="28" y="16" width="64" height="90" rx="6" fill="#fffdf6" stroke="#c9a45e" stroke-width="2.5"/>
+            <rect x="44" y="10" width="32" height="14" rx="4" fill="#c9a45e"/>
+            <rect x="38" y="38" width="10" height="10" rx="2" stroke="#33502f" stroke-width="2.5"/>
+            <path d="M40 43l2.4 2.6L46 41" stroke="#33502f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="54" y1="43" x2="82" y2="43" stroke="#33502f" stroke-width="2.2" stroke-linecap="round"/>
+            <rect x="38" y="58" width="10" height="10" rx="2" stroke="#33502f" stroke-width="2.5"/>
+            <path d="M40 63l2.4 2.6L46 61" stroke="#33502f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="54" y1="63" x2="82" y2="63" stroke="#33502f" stroke-width="2.2" stroke-linecap="round"/>
+            <rect x="38" y="78" width="10" height="10" rx="2" stroke="#8a611f" stroke-width="2.5"/>
+            <line x1="54" y1="83" x2="74" y2="83" stroke="#8a611f" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="bonus-tagchip">特典 3</span>
+        <div class="bonus-banner-caption">
+          <p class="book">「本質・決断力 自己診断チェックシート」(PDF)<br><em>※ 公式LINEにご登録の方限定</em></p>
+        </div>
+      </div>
+      <div class="bonus-body">
+        <h3>今のあなたが「何に迷い、何を決めるべきか」が見えてくる</h3>
+        <p>
+          簡単な質問に答えるだけで、あなたの現在地と決断のポイントを整理できる自己診断シートです。
+          公式LINEにご登録いただいた方に、その場でお渡しします。
+        </p>
+        <span class="bonus-cond bonus-cond--line">公式LINEへのご登録が必要です</span>
+      </div>
+    </div>
+
+    <p class="voice-note">
+      ※ 特典はすべて無料です。※ 特典の内容・提供方法は予告なく変更となる場合がございます。
+    </p>
+  </div>
+</section>
+
+<!-- ============ お客様の声 ============ -->
+<section class="seigaiha">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">VOICE</span>
+      <h2>天道象元に学んだ方々の声</h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph"><img src="images/voice-01.jpg" alt="53才 産婦人科院長"></div>
+        <p class="attr">53才<br>産婦人科院長</p>
+      </div>
+      <div class="voice-body">
+        <p class="voice-quote">「天命を学ぶ事で、人間関係が改善し患者様に選ばれストレス激減」</p>
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph"><img src="images/voice-02.jpg" alt="75才 税理士法人代表"></div>
+        <p class="attr">75才<br>税理士法人代表</p>
+      </div>
+      <div class="voice-body">
+        <p class="voice-quote">「天命を読む事で良い人間関係ができ最適な後継者ができた」</p>
+      </div>
+    </div>
+
+    <div class="voice-card">
+      <div class="voice-who">
+        <div class="ph"><img src="images/voice-03.jpg" alt="44才 ペットショップ社長"></div>
+        <p class="attr">44才<br>ペットショップ社長</p>
+      </div>
+      <div class="voice-body">
+        <p class="voice-quote">「天命を知る事で、お客様に選ばれる仕組みと心豊かな人生を手に入れた」</p>
+      </div>
+    </div>
+
+    <p class="voice-note">※ 掲載内容は個人の感想であり、成果を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- ============ 登録方法 ============ -->
+<section id="regi">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="en">HOW TO GET</span>
+      <h2>受け取り方は、<em>とてもかんたん</em></h2>
+      <div class="rule"><span></span></div>
+    </div>
+
+    <ul class="steps">
+      <li>
+        <span class="num">1</span>
+        <b>お名前・メールアドレスを登録</b>
+        <p>下のボタンから登録フォームへ進み、お名前とメールアドレスをご入力ください。</p>
+      </li>
+      <li>
+        <span class="num">2</span>
+        <b>確認メールが届く</b>
+        <p>ご登録のメールアドレスに、電子書籍(PDF)と解説動画をお届けします。</p>
+      </li>
+      <li>
+        <span class="num">3</span>
+        <b>公式LINEにも登録</b>
+        <p>公式LINEにご登録いただくと、特典3の自己診断シートをその場でお渡しします。</p>
+      </li>
+    </ul>
+
+    <a class="cta-btn js-form-link" href="#regi">
+      今すぐ無料で3大特典を受け取る
+      <span class="sub">お名前・メールアドレスのご入力だけ／30秒で完了</span>
+    </a>
+
+    <p class="privacy-note">
+      ご登録いただいたお名前・メールアドレスは、特典のお届けおよび天道象元・ベスト・フューチャーからの
+      関連するご案内の配信のために利用します。配信の停止は、お送りするメール内のリンクからいつでも
+      行っていただけます。第三者への提供は行いません。
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="images/logo.png" alt="ベスト・フューチャー">
+    <p>ベスト・フューチャー ／ 天道象元</p>
+    <div class="links">
+      <a href="#" data-note="プライバシーポリシーURLに差し替えてください">プライバシーポリシー</a>
+      <a href="#" data-note="特定商取引法に基づく表記URLに差し替えてください">特定商取引法に基づく表記</a>
+    </div>
+    <p class="copy">&copy; Best Future / 天道象元</p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="js-form-link" href="#regi">無料で3大特典を受け取る</a>
+</div>
+
+<script>
+// 特典2の画像は生成AI（Gamma）で作成した外部CDN画像です。
+// ローカル保存できない環境のため、直接URLを参照します。
+// UTAGE上に実際にアップロードする場合は media_upload_url 経由でホスト先を
+// UTAGEのメディアライブラリに差し替えてください（UTAGE_SETUP.md 参照）。
+(function(){
+  var url = "https://cdn.gamma.app/394guuaxvntkunh/design-anything/xe3aCmJmkqOhj2U7WtaLw/QeDVThmCA4gFmYb6B6kMA.jpg";
+  var img = document.getElementById('bonus2-image');
+  var fallback = document.getElementById('bonus2-fallback');
+  if(img){
+    img.src = url;
+    img.onload = function(){ img.style.display='block'; if(fallback) fallback.style.display='none'; };
+    img.onerror = function(){ img.style.display='none'; if(fallback) fallback.style.display='flex'; };
+  }
+})();
+
+// 登録フォームのURL（UTAGEに作成済みの「登録フォーム」ページ）
+// 詳細は UTAGE_SETUP.md を参照してください。
+(function(){
+  var FORM_URL = "https://utage-system.com/p/2P8EUynCjJkQ";
+  if(FORM_URL !== "#regi"){
+    document.querySelectorAll('.js-form-link').forEach(function(el){ el.href = FORM_URL; });
+  }
+})();
+</script>
+
+</body>
+</html>

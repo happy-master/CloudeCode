@@ -8,6 +8,9 @@
 | --- | --- |
 | `seminar/index.html` | 「天命の決断」速習 Zoom セミナー LP（1ファイル完結・CSS 埋め込み） |
 | `seminar/images/` | LP で使用する画像（ヒーロー、特典、お客様の声、書影、ロゴ） |
+| `optin/index.html` | 天道象元 公式 無料プレゼント オプトインLP（お名前・メール・LINE登録の入口） |
+| `optin/images/` | オプトインLP で使用する画像 |
+| `optin/UTAGE_SETUP.md` | オプトインLPのUTAGE設定仕様（ファネル/フォーム/シナリオのID一覧・残作業） |
 | `tendou_shogen_profile.html` | 天道象元 自己紹介カード |
 | `scripts/generate_image.mjs` | OpenAI Images API（gpt-image-1）で画像を生成する CLI |
 | `scripts/save-clipboard-image.sh` | クリップボードの画像をファイルに保存する（macOS 専用） |
@@ -27,6 +30,18 @@ OGP と `canonical` は UTAGE の実ページと同じ値を指しています�
 > **注意:** `kaiun119.com/seminar/` は公開先ではありません。そちらは WordPress の別ページ（商品・講座一覧）で、`/seminar/images/` は 404 を返します。以前は冒頭コメントと OGP がこの URL を指していましたが修正済みです。URL を扱う際は UTAGE 側を正としてください。
 
 Zoom の参加 URL は LP には記載していません。申込者に UTAGE のサンクスメール／リマインドメールで配信されます。
+
+### オプトインLP（無料3大特典）
+
+天道象元のビジネスへの入口となる、お名前・メールアドレス・公式LINE登録用のLPです。詳細は
+[`optin/UTAGE_SETUP.md`](optin/UTAGE_SETUP.md) を参照してください。
+
+- LP: https://utage-system.com/p/1MJJCOhH8R7u
+- 登録フォーム: https://utage-system.com/p/2P8EUynCjJkQ
+- サンキュー・LINE登録: https://utage-system.com/p/1oPYvFaF9gna
+
+書籍PDF本体・解説動画・自己診断シートPDFなど、実データの差し込みが必要な項目は
+`optin/UTAGE_SETUP.md` の「残作業」にまとめています。
 
 ## セットアップ
 
