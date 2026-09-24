@@ -718,11 +718,26 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
   border-radius:5px;padding:30px 26px;box-shadow:0 10px 26px rgba(60,50,20,.07);
 }
 .who.alt{border-top-color:var(--gold);}
+/* カード上端に写真を敷く（カードの左右・上パディングを打ち消して端まで広げる） */
+.who{overflow:hidden;}
+.who-img{
+  display:block;width:calc(100% + 52px);max-width:none;height:auto;aspect-ratio:3/2;object-fit:cover;
+  margin:-30px -26px 22px;
+}
+.who:not(.alt) .who-img{object-position:30% 40%;}
+.who.alt .who-img{object-position:70% 40%;}
+.takeaway-img{
+  display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;object-position:30% 35%;
+  border-radius:6px 6px 0 0;border:2px solid var(--gold);border-bottom:none;
+}
+.takeaway-img + .takeaway{border-top-left-radius:0;border-top-right-radius:0;}
+@media(max-width:760px){.takeaway-img{aspect-ratio:3/2;}}
 .who .who-tag{
   display:inline-block;font-size:14.5px;letter-spacing:.16em;color:#fffdf6;
   background:var(--indigo);padding:5px 14px;border-radius:3px;margin-bottom:14px;
 }
 .who.alt .who-tag{background:var(--gold-deep);}
+.who h3,.who-msg{text-wrap:balance;}
 .who h3{margin:0 0 14px;font-size:24px;line-height:1.7;color:var(--indigo);letter-spacing:.05em;}
 .who ul{margin:0 0 18px;padding:0;list-style:none;}
 .who li{
@@ -894,25 +909,27 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
 
     <div class="who-grid">
       <div class="who">
+        <img class="who-img" src="images/who-leader.webp" alt="窓辺でノートを前に考えをめぐらせる女性経営者" width="1536" height="1024" loading="lazy">
         <span class="who-tag">経営者・組織のリーダーの方へ</span>
-        <h3>事業・人材・自身の進路を<br>決めきれないとき</h3>
+        <h3>事業・人材・自身の進路を<br class="pc-only">決めきれないとき</h3>
         <ul>
           <li>次の一手を決める判断材料が揃わない</li>
           <li>採用・配置・後継など、人の判断に迷う</li>
           <li>最終判断をひとりで背負っている</li>
         </ul>
-        <p class="who-msg">人任せにせず、決断を整理する<br>自分の基準を持つ。</p>
+        <p class="who-msg">人任せにせず、決断を整理する<br class="pc-only">自分の基準を持つ。</p>
       </div>
 
       <div class="who alt">
+        <img class="who-img" src="images/who-transition.webp" alt="自宅の机でノートに書き込みながら、これからを思い描く女性" width="1536" height="1024" loading="lazy">
         <span class="who-tag">人生の転換期にいる方へ</span>
-        <h3>仕事・家族・これからの生き方に迷っているとき</h3>
+        <h3>仕事・家族・これからの<br class="pc-only">生き方に迷っているとき</h3>
         <ul>
           <li>転職・独立・引退など、節目を迎えている</li>
           <li>家族との関わり方を見直したい</li>
           <li>これから何を大切に生きるかを決めたい</li>
         </ul>
-        <p class="who-msg">自分を知り、これからの一歩を<br>自分で選ぶ。</p>
+        <p class="who-msg">自分を知り、これからの一歩を<br class="pc-only">自分で選ぶ。</p>
       </div>
     </div>
   </div>
@@ -926,6 +943,8 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
       <h2>セミナーの75分で、あなたが持ち帰るもの</h2>
       <div class="rule"><span></span></div>
     </div>
+
+    <img class="takeaway-img" src="images/takeaway.webp" alt="ノートに迷いを書き出し、次の一歩を考える男性" width="1536" height="1024" loading="lazy">
 
     <div class="takeaway">
       <span class="label">参加後のゴール</span>
