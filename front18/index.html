@@ -13,7 +13,7 @@
     - 各回の定員              … 末尾 <script> の CAPACITY に設定
     - 開催日程                … #schedule の表の「調整中」を差し替え
     - OGP画像 / canonical     … 公開URLが決まったら追記
-  画像は ../seminar/images/ を参照しています。UTAGEに載せる場合は
+  講師写真は front18/images/tendou-shogen.webp、ロゴ・書影は ../seminar/images/ を参照しています。UTAGEに載せる場合は
   UTAGEのメディアにアップロードした絶対URLに置き換えてください。
 
   表示上の注意: 成果の保証と受け取れる表現、根拠のない体験談は載せない
@@ -470,6 +470,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
   box-shadow:0 0 0 6px #fffefb,0 0 0 7px rgba(169,124,47,.4),0 14px 30px rgba(60,50,20,.25);
 }
 .portrait img{width:100%;height:100%;object-fit:cover;}
+.profile .portrait img{object-position:50% 12%;transform:scale(1.5);transform-origin:50% 22%;background:#fff;}
 .profile-card .name{
   text-align:center;font-size:53px;letter-spacing:.18em;margin:0;
   background:linear-gradient(180deg,var(--gold),var(--gold-deep));
@@ -685,6 +686,35 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
   .hero-facts.four div{flex:1 1 50%;border-bottom:1px solid rgba(201,164,94,.25);}
 }
 
+/* ファーストビューの講師紹介 */
+.hero-lecturer{
+  display:flex;align-items:flex-end;gap:26px;max-width:620px;margin:28px auto 0;
+  background:#fff;border:1px solid rgba(169,124,47,.42);border-radius:6px;
+  padding:0 28px 0 16px;text-align:left;overflow:hidden;
+  box-shadow:0 8px 22px rgba(51,80,47,.12);
+}
+.hero-lecturer img{flex:0 0 auto;width:210px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 100%;margin-top:14px;}
+.hero-lecturer .hl-text{flex:1 1 auto;padding:22px 0 26px;align-self:center;}
+.hl-role{
+  display:inline-block;font-size:13.3px;letter-spacing:.2em;color:#fffdf6;
+  background:var(--indigo);padding:3px 12px;border-radius:3px;
+}
+.hero-lecturer b{
+  display:block;margin-top:8px;font-size:37px;line-height:1.3;letter-spacing:.16em;
+  background:linear-gradient(180deg,var(--gold),var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hl-read{display:block;font-size:13.3px;letter-spacing:.3em;color:#8a8577;}
+.hero-lecturer p{margin:12px 0 0;font-size:16.5px;line-height:1.9;color:var(--ink-soft);}
+@media(max-width:520px){
+  .hero-lecturer{gap:10px;padding:0 14px 0 4px;}
+  .hero-lecturer img{width:132px;}
+  .hero-lecturer .hl-text{padding:16px 0 18px;}
+  .hero-lecturer b{font-size:27px;letter-spacing:.1em;}
+  .hero-lecturer p{font-size:13.8px;}
+  .hero-lecturer b{margin-top:6px;}
+}
+
 /* 持ち帰れる成果 */
 .takeaway{
   background:#fff;border:2px solid var(--gold);border-radius:6px;
@@ -835,6 +865,16 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
         「決めなければ」と思いながら、決めきれずにいることはありませんか。<br>
         75分のZoomセミナーで、あなた自身の迷いを題材に、判断材料を整理します。
       </p>
+    </div>
+
+    <div class="hero-lecturer">
+      <img src="images/tendou-shogen.webp" alt="講師 天道象元" width="1920" height="1920">
+      <div class="hl-text">
+        <span class="hl-role">講師</span>
+        <b>天道象元</b>
+        <span class="hl-read">てんどう・しょうげん</span>
+        <p>帝王氣学マスター養成講座 主宰<br>10年間で約1万名に帝王氣学メソッドを伝授</p>
+      </div>
     </div>
 
     <dl class="hero-facts four">
@@ -1073,7 +1113,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
       </div>
 
       <div class="portrait">
-        <img src="../seminar/images/tendou-shogen.jpg" alt="天道象元" width="172" height="172">
+        <img src="images/tendou-shogen.webp" alt="天道象元" width="1920" height="1920">
       </div>
 
       <h3 class="name">天道象元</h3>
