@@ -666,53 +666,29 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
    以下、第18期フロントセミナーLP 固有のスタイル
    ========================================================================== */
 
-/* ファーストビュー：画像バナーを使わずテキストで組む */
-.hero-front{
-  background:linear-gradient(165deg,#1b2f1c 0%,var(--indigo) 45%,#4a6b45 100%);
-  color:#fdfaf2;border-radius:6px;padding:48px 24px 44px;
+/* ファーストビュー：バナー画像＋その下にセミナー題名 */
+.hero-banner-img{
+  display:block;width:100%;height:auto;border-radius:6px;
   box-shadow:0 16px 40px rgba(51,80,47,.22);
 }
-.hero-front .hero-banner{margin-bottom:26px;}
-.hero-front h1{font-size:47px;}
-.hero-front .hero-sub{
-  margin:22px auto 0;max-width:600px;font-size:19.6px;line-height:2;color:#e2d8c4;
+.hero-copy{margin:30px auto 0;max-width:720px;}
+.hero-copy-lead{margin:0 0 10px;font-size:17.7px;letter-spacing:.14em;color:var(--gold-deep);}
+.hero-copy h1{
+  margin:0;font-size:39px;line-height:1.6;letter-spacing:.08em;color:var(--indigo-deep);
+  text-wrap:balance;
 }
-.hero-front .limit-note{color:#f0dcae;}
+.hero-copy h1{text-shadow:none;}
+.hero-copy .nw{display:inline-block;}
+.hero-copy h1 em{font-style:normal;color:var(--accent);font-size:1.15em;}
+.hero-copy-sub{margin:16px 0 0;font-size:18.3px;line-height:2;color:var(--ink-soft);}
 .hero-facts.four div{flex:1 1 25%;min-width:130px;}
 @media(max-width:760px){
-  .hero-front{padding:36px 16px 34px;}
-  .hero-front h1{font-size:31px;}
-  .hero-front .hero-sub{font-size:17.7px;}
+  .hero{padding-top:20px;}
+  .hero-copy{margin-top:22px;}
+  .hero-copy-lead{font-size:14.5px;letter-spacing:.06em;line-height:1.7;}
+  .hero-copy h1{font-size:25px;letter-spacing:.04em;}
+  .hero-copy-sub{font-size:16.5px;text-align:left;}
   .hero-facts.four div{flex:1 1 50%;border-bottom:1px solid rgba(201,164,94,.25);}
-}
-
-/* ファーストビューの講師紹介 */
-.hero-lecturer{
-  display:flex;align-items:flex-end;gap:26px;max-width:620px;margin:28px auto 0;
-  background:#fff;border:1px solid rgba(169,124,47,.42);border-radius:6px;
-  padding:0 28px 0 16px;text-align:left;overflow:hidden;
-  box-shadow:0 8px 22px rgba(51,80,47,.12);
-}
-.hero-lecturer img{flex:0 0 auto;width:210px;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 100%;margin-top:14px;}
-.hero-lecturer .hl-text{flex:1 1 auto;padding:22px 0 26px;align-self:center;}
-.hl-role{
-  display:inline-block;font-size:13.3px;letter-spacing:.2em;color:#fffdf6;
-  background:var(--indigo);padding:3px 12px;border-radius:3px;
-}
-.hero-lecturer b{
-  display:block;margin-top:8px;font-size:37px;line-height:1.3;letter-spacing:.16em;
-  background:linear-gradient(180deg,var(--gold),var(--gold-deep));
-  -webkit-background-clip:text;background-clip:text;color:transparent;
-}
-.hl-read{display:block;font-size:13.3px;letter-spacing:.3em;color:#8a8577;}
-.hero-lecturer p{margin:12px 0 0;font-size:16.5px;line-height:1.9;color:var(--ink-soft);}
-@media(max-width:520px){
-  .hero-lecturer{gap:10px;padding:0 14px 0 4px;}
-  .hero-lecturer img{width:132px;}
-  .hero-lecturer .hl-text{padding:16px 0 18px;}
-  .hero-lecturer b{font-size:27px;letter-spacing:.1em;}
-  .hero-lecturer p{font-size:13.8px;}
-  .hero-lecturer b{margin-top:6px;}
 }
 
 /* 持ち帰れる成果 */
@@ -831,7 +807,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
 .legal-note{
   margin:26px 0 0;font-size:15.1px;line-height:1.95;color:var(--ink-soft);text-align:center;
 }
-@media(max-width:760px){.pc-only{display:none;} .hero-banner .sp-block{display:block;height:0;overflow:hidden;} .hero-front h1{font-size:27px;letter-spacing:.04em;} .hero-front .hero-lead{font-size:15.8px;letter-spacing:.08em;}}
+@media(max-width:760px){.pc-only{display:none;}}
 </style>
 </head>
 <body>
@@ -853,28 +829,16 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
 <!-- ============ ファーストビュー ============ -->
 <section class="hero">
   <div class="wrap">
-    <div class="hero-front">
-      <p class="hero-banner">第18期「帝王氣学マスター養成講座」開講記念<span class="sp-block">　</span>無料フロントセミナー</p>
-      <p class="hero-lead">自分の天命を知り、迷いを決断に変える基準を身につける</p>
-      <h1>
-        天命を知り、<br>
-        <span class="l2">迷いを<span class="hl">決断</span>に変える</span>
-        帝王氣学入門
-      </h1>
-      <p class="hero-sub">
-        「決めなければ」と思いながら、決めきれずにいることはありませんか。<br>
+    <img class="hero-banner-img" src="images/hero.webp"
+         alt="第18期 帝王氣学マスター養成講座 事前勉強会　講師 天道象元" width="1672" height="941">
+
+    <div class="hero-copy">
+      <p class="hero-copy-lead"><span class="nw">自分の天命を知り、</span><span class="nw">迷いを決断に変える基準を身につける</span></p>
+      <h1><span class="nw">天命を知り、</span><span class="nw">迷いを<em>決断</em>に変える</span><br><span class="nw">帝王氣学入門</span></h1>
+      <p class="hero-copy-sub">
+        「決めなければ」と思いながら、決めきれずにいることはありませんか。<br class="pc-only">
         75分のZoomセミナーで、あなた自身の迷いを題材に、判断材料を整理します。
       </p>
-    </div>
-
-    <div class="hero-lecturer">
-      <img src="images/tendou-shogen.webp" alt="講師 天道象元" width="1920" height="1920">
-      <div class="hl-text">
-        <span class="hl-role">講師</span>
-        <b>天道象元</b>
-        <span class="hl-read">てんどう・しょうげん</span>
-        <p>帝王氣学マスター養成講座 主宰<br>10年間で約1万名に帝王氣学メソッドを伝授</p>
-      </div>
     </div>
 
     <dl class="hero-facts four">
