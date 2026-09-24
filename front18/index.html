@@ -823,6 +823,40 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
   margin:26px 0 0;font-size:15.1px;line-height:1.95;color:var(--ink-soft);text-align:center;
 }
 @media(max-width:760px){.pc-only{display:none;}}
+/* ---------- 最終CTA・フッター：明るい生成り地に切り替え ---------- */
+.final{
+  background:
+    radial-gradient(circle at 50% 0%,rgba(201,164,94,.18),transparent 62%),
+    linear-gradient(180deg,#fbf6ea 0%,#f3ead6 100%);
+  color:var(--ink);
+  border-top:1px solid rgba(169,124,47,.35);
+}
+.final h2{color:var(--indigo-deep);}
+.final h2 span{
+  background:linear-gradient(180deg,var(--gold),var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.final p{color:var(--ink-soft);}
+.final .cta-sub{color:var(--ink-soft);opacity:1;}
+.final .legal-note{color:#6f6a5c;font-size:14.5px;}
+.final .nw-i{display:inline-block;}
+.site-foot{
+  background:#efe6d0;color:#6f6a5c;
+  border-top:1px solid rgba(169,124,47,.4);
+}
+.site-foot .foot-brand{color:var(--indigo-deep);font-size:19.6px;letter-spacing:.12em;border-bottom-color:rgba(169,124,47,.5);}
+.site-foot .foot-brand b{color:var(--gold-deep);white-space:nowrap;}
+.site-foot .foot-brand .nw{white-space:nowrap;}
+.site-foot a{color:var(--indigo);border-bottom-color:rgba(51,80,47,.35);}
+.site-foot a:hover{color:var(--gold-deep);}
+.sticky-cta{background:rgba(251,246,234,.96);border-top:1px solid rgba(169,124,47,.4);box-shadow:0 -4px 16px rgba(60,50,20,.14);}
+@media(max-width:760px){
+  .site-foot .foot-brand{font-size:16.5px;letter-spacing:.06em;}
+  .final p{font-size:16.5px;letter-spacing:.02em;text-wrap:balance;}
+  .final .cta-sub{font-size:14.5px;}
+  .final .legal-note{font-size:13.3px;text-align:left;}
+  .site-foot .links a{display:inline-block;margin:0 8px;}
+}
 </style>
 </head>
 <body>
@@ -1239,7 +1273,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
       自分を知り、判断の基準を持てば、<br>
       次の一歩は自分で選べるようになります。<br><br>
       まずは75分。<br>
-      あなたの迷いを一文にするところから、ご一緒します。
+      <span class="nw-i">あなたの迷いを一文にするところから、</span><span class="nw-i">ご一緒します。</span>
     </p>
 
     <div class="cta-block">
@@ -1250,7 +1284,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
       <p class="cta-sub">お申し込み後、整理シートPDFをすぐにお届けします</p>
     </div>
 
-    <p class="legal-note" style="color:#c7d3c0;">
+    <p class="legal-note">
       ※ 本勉強会および講座は、帝王氣学の考え方とセルフ鑑定の方法を学ぶものであり、<br class="pc-only">
       特定の成果（収入・業績など）を保証するものではありません。
     </p>
@@ -1258,7 +1292,7 @@ a.bonus-banner-link:hover{filter:brightness(1.05);}
 </section>
 
 <footer class="site-foot">
-  <p class="foot-brand">帝王氣学マスター養成講座　講師　<b>天道象元</b></p>
+  <p class="foot-brand"><span class="nw">帝王氣学マスター養成講座</span>　<span class="nw">講師　<b>天道象元</b></span></p>
   <div class="links">
     <a href="/privacy/">プライバシーポリシー</a>
     <a href="/tokushoho/">特定商取引法に基づく表記</a>
