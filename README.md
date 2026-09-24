@@ -7,7 +7,7 @@
 | パス | 内容 |
 | --- | --- |
 | `seminar/index.html` | 「天命の決断」速習 Zoom セミナー LP（1ファイル完結・CSS 埋め込み） |
-| `front18/index.html` | 第18期「帝王氣学マスター養成講座」集客フロントセミナー LP（75分・無料 Zoom）。日程・定員・申込URLは未確定のため冒頭コメントの TODO を参照 |
+| `front18/index.html` | 第18期「帝王氣学マスター養成講座」集客「事前勉強会」LP（75分・無料 Zoom）。日程・定員・申込URLは未確定のため冒頭コメントの TODO を参照 |
 | `seminar/images/` | LP で使用する画像（ヒーロー、特典、お客様の声、書影、ロゴ） |
 | `tendou_shogen_profile.html` | 天道象元 自己紹介カード |
 | `scripts/generate_image.mjs` | OpenAI Images API（gpt-image-1）で画像を生成する CLI |
