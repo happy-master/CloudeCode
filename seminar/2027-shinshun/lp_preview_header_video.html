@@ -36,9 +36,9 @@ a{color:inherit}
 .hero-visual{position:relative}
 .hero-photo{width:100%;height:auto;max-height:760px;object-fit:cover;object-position:center 30%}
 .hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(31,26,46,0) 55%,rgba(31,26,46,.7) 80%,var(--sumi) 100%);pointer-events:none}
-.hero-person{position:absolute;right:1%;bottom:0;height:90%;width:auto;z-index:1;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 98%);mask-image:linear-gradient(180deg,#000 72%,transparent 98%)}
-.hero-visual .kado.r{display:none}
-@media(max-width:760px){.hero-person{height:78%;right:-12%}}
+.hero-person{position:absolute;left:1%;bottom:0;height:90%;width:auto;z-index:1;pointer-events:none;-webkit-mask-image:linear-gradient(180deg,#000 72%,transparent 98%);mask-image:linear-gradient(180deg,#000 72%,transparent 98%)}
+.hero-visual .kado.l{display:none}
+@media(max-width:760px){.hero-person{height:80%;left:-3%}}
 .hero-inner{position:relative;z-index:2;text-align:center;padding:0 16px clamp(36px,5vw,60px);margin-top:-16vw}
 .hero .badge{display:inline-flex;gap:8px;align-items:center;font-size:12px;letter-spacing:.2em;border:1px solid rgba(236,213,154,.7);color:var(--kin-l);padding:4px 14px;border-radius:30px;background:rgba(31,26,46,.35);backdrop-filter:blur(2px)}
 .hero h1{font-size:clamp(36px,7.2vw,76px);line-height:1.25;letter-spacing:.08em;margin-top:14px;text-shadow:0 2px 18px rgba(0,0,0,.45)}
