@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__UTAGE__payment_product_update",
+      "mcp__UTAGE__event_schedule_update",
+      "mcp__UTAGE__funnel_page_update"
+    ]
+  }
+}
